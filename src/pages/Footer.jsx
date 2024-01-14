@@ -23,6 +23,7 @@ const Footer = () => {
           <span className="text-white">
             <MdKeyboardArrowUp />
           </span>
+          
         </div>
       </div>
     </div>
