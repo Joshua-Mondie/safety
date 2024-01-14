@@ -1,0 +1,10 @@
+/* styles.css */
+
+.hero-section {
+    background-image: "url('./src/assets/bgimage.jpg')";
+    background-size: cover;
+    background-position: center;
+    /* Additional background properties can be added as needed */
+  }
+  
+  
