@@ -26,7 +26,7 @@ const Header = () => {
         {/* </div> */}
 
         <ul className="flex text-black gap-x-10 items-center text-base  justify-center  py-4">
-          <Link to="/homepage">
+          <Link to="">
             <li className="text-xl font-black">Home</li>
           </Link>
           <button className=" relative" onClick={onClick}>
