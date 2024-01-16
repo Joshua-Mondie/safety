@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import backgroundImage from '../assets/bg-image.svg';
 
 const BodyA = () => {
   // Retrieve the initial time from localStorage or default to 0
@@ -28,7 +29,7 @@ const BodyA = () => {
   return (
     <div
       className="slide-container h-[100vh] flex items-center justify-center  bg-cover bg-no-repeat   md:pl-8 "
-      style={{ backgroundImage: "url('/assets/bg-image.svg')" }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="text-white">
         <h1 className="text-white font-bold text-4xl  flex justify-center">
