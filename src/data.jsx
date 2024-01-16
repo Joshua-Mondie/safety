@@ -1000,3 +1000,34 @@ export const names = [
     ),
   },
 ];
+
+export const navLinks = [
+  {
+    link: "Home",
+    path: "/home",
+  },
+  {
+    link: "About",
+    path: "/about",
+  },
+  {
+    link: "Training & Certification",
+    path: "/traning&certification",
+  },
+  {
+    link: "NYSC Program",
+    path: "/nyscprogramme",
+  },
+  {
+    link: "Safety News",
+    path: "/safetynew",
+  },
+  {
+    link: "Membership",
+    path: "/membership",
+  },
+  {
+    link: "Contact Us",
+    path: "/contactus",
+  }
+];

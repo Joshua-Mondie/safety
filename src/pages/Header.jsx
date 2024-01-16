@@ -1,70 +1,69 @@
 import isponbg from "../assets/isponbg.png";
 // import { MdOutlineArrowDropDown } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
+import { navLinks } from "../data";
+
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const onClick = () => {
-    setIsOpen(!isOpen);
-  };
+  // const [isOpen, setIsOpen] = useState(false);
+  // const onClick = () => {
+  //   setIsOpen(!isOpen);
+  // };
+  // const navigate = useNavigate();
+  
 
   return (
-    <div className=" fixed w-full z-20 py-8  top-0 bg-white ">
+    <div className=" fixed w-full z-20 lg:py-8  top-0 bg-white ">
       <div className=" flex gap-x-40    px-6  items-center ">
-
         {/* <div className="border  flex justify-betwen items-center"> */}
-        <img
-          src={isponbg}
-          alt="images here"
-          className="w-[70px] h-[68px] "
-        />
-        {/* <div className="border w-full"> */}
-        {/* <ul className="flex items-center w-full justify-end gap-x-20 border"> */}
-        {/* </ul> */}
-        {/* </div> */}
-        {/* </div> */}
+        <img src={isponbg} alt="images here" className="w-10 h-10 md:w-[70px] md:h-[68px] " />
 
-        <ul className="flex text-black gap-x-10 items-center text-base  justify-center  py-4">
+        <div className="flex  text-black md:gap-x-10 items-center text-base  justify-center  md:py-4">
+          {navLinks.map((links, index) => (
+            <ul
+              key={index}
+              className={index === navLinks.length - 1 && " md:w-[10rem] py-2 bg-[#000000] md:text-xl font-black text-[#FFFFFF] flex justify-center"}
+            >
+              <li className="text-xl font-black">
+                <Link to={links.path}>{links.link}</Link>
+              </li>
+            </ul>
+          ))}
+        </div>
+
+        {/* <ul className="flex text-black gap-x-10 items-center text-base  justify-center  py-4">
           <Link to="">
             <li className="text-xl font-black">Home</li>
           </Link>
           <button className=" relative" onClick={onClick}>
             <div className="flex items-center">
               <li className="text-xl font-black">About</li>
-              {/* <MdOutlineArrowDropDown className="h-6 w-6" /> */}
             </div>
           </button>
           <Link to="/branches">
             <li className="text-xl font-black">Training & Certification</li>
           </Link>
 
-          {/* <Link className="flex items-center">
-            <li className="font-medium text-lg">Services</li>
-          </Link> */}
+          
 
           <Link to="/nyscprogramme" className="flex items-center">
             <li className="text-xl font-black">NYSC Program</li>
-            {/* <MdOutlineArrowDropDown className="h-6 w-6" /> */}
           </Link>
 
-          {/* <Link> */}
 
           <li className="text-xl font-black">Safety News</li>
-          {/* </Link> */}
 
-          {/* <Link> */}
 
           <li className="text-xl font-black">Membership</li>
-          {/* </Link> */}
           <li>
             <button className=" w-[10rem] py-2 bg-[#000000] text-xl font-black text-[#FFFFFF]">
               Contact Us
             </button>
           </li>
-        </ul>
+        </ul> */}
       </div>
-      {isOpen && (
+      {/* {isOpen && (
         <div className=" absolute  ml-96 bg-white min-h-96 w-[40rem] text-2xl font-semibold">
           <Link
             to="/aboutispon"
@@ -91,7 +90,7 @@ const Header = () => {
             Partnership & Collaboration
           </h1>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

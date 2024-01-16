@@ -1,10 +1,11 @@
 import profileimage from "../assets/profilepicture.jpg.svg";
 
+
 const BodyB = () => {
   return (
     <div
-      className="hero-section  h-full bg-cover bg-no-repeat flex justify-center gap-x-28 pt-10"
-      style={{ backgroundImage: "url('./src/assets/bgimage.svg')" }}
+      className="hero-section border h-full bg-cover bg-no-repeat flex justify-center gap-x-28 pt-10"
+      style={{ backgroundImage: "url('./src/assets/profilepicture.svg')" }}
     >
       <div className=" ">
         <h1 className=" text-3xl font-semibold mb-4">National President</h1>

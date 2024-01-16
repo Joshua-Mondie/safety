@@ -19,7 +19,7 @@ const RecentNews = () => {
     }
   ]
   return (
-    <div>
+    <div className="mt-10">
       <div className="flex justify-between mt-5 px-12">
         <h1 className="text-3xl font-semibold">Recent news</h1>
         <button className="border w-[103.75px] py-2">View All</button>

@@ -13,11 +13,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <>
-          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/home" element={<HomePage />}></Route>
           {/* <Route path="/HomePage" element={<HomePage />}></Route> */}
           <Route path="/branches" element={<BranchesPage />}></Route>
-          <Route path="/aboutispon" element={<AboutPages/>}></Route>
-          <Route path="/nyscprogramme" element={<NyscProgramme/>}></Route>
+          <Route path="/about" element={<AboutPages/>}></Route>
+          <Route path="/traning&certification" element={<NyscProgramme/>}></Route>
 
           {/* <Route path="landingpage">
 
