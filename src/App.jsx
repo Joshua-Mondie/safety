@@ -16,14 +16,17 @@ function App() {
           <Route path="/home" element={<HomePage />}></Route>
           {/* <Route path="/HomePage" element={<HomePage />}></Route> */}
           <Route path="/branches" element={<BranchesPage />}></Route>
-          <Route path="/about" element={<AboutPages/>}></Route>
-          <Route path="/traning&certification" element={<NyscProgramme/>}></Route>
-
+          <Route path="/about" element={<AboutPages />}></Route>
+          <Route
+            path="/traning&certification"
+            element={<NyscProgramme />}
+          ></Route>
+          <h1>hello</h1>
           {/* <Route path="landingpage">
+          
 
           </Route> */}
         </>
-        
       </Routes>
     </BrowserRouter>
   );
