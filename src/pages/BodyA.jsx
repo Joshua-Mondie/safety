@@ -26,7 +26,10 @@ const BodyA = () => {
   const seconds = currentTime % 60;
 
   return (
-    <div className="slide-container h-[100vh] flex items-center justify-center  bg-cover bg-no-repeat   md:pl-8 bg-[url('./src/assets/bg-image.svg')]">
+    <div
+      className="slide-container h-[100vh] flex items-center justify-center  bg-cover bg-no-repeat   md:pl-8 "
+      style={{ backgroundImage: "url('src/assets/bg-image.svg')" }}
+    >
       <div className="text-white">
         <h1 className="text-white font-bold text-4xl  flex justify-center">
           COMING SOON
