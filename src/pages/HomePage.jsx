@@ -9,6 +9,7 @@ import Header from "./Header";
 import History from "./History";
 import { useState } from "react";
 import bgimg1 from "../assets/safetybg2.avif"
+// import one from  "../assets/one.jpg"
 
 // import Header from "./Header";
 // import RecentNews from "./RecentNews";
@@ -125,7 +126,12 @@ const HomePage = () => {
             </div>
           ))}
         </div>
+
       </div>
+
+      {/* <div className="border h-[50vh] bgco" style={{ backgroundImage:one }}>
+
+      </div> */}
       {
         <div className=" mt-48 bg-gray-100 ">
           <Footer />

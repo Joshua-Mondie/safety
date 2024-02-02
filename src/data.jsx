@@ -8,7 +8,7 @@ import bgimg3 from './assets/whatsapimg3.jpeg'
 import bgimg4 from './assets/whatsapimg4.jpeg'
 import whatsapA from './assets/whataimg2.jpeg'
 import whatsapB from './assets/whatappimg.jpeg'
-import whatsapC from './assets/award2.png'
+import img from './assets/img.jpeg'
 
 
 // import {FcRules} from "react-icons/fc"
@@ -1112,10 +1112,10 @@ export const events = [
     // location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
   },
   {
-    bgImage: whatsapC,
+    bgImage: img,
     btn: 'conference',
     // date: 'Tuesday October 31, 2023',
-    header: 'Modern Techonology And Safety Management System',
+    header: 'Thoughts Provoking Moments',
     // location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
   },
 ]
