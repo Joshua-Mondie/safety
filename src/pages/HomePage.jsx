@@ -23,12 +23,15 @@ const HomePage = () => {
   const handleMouseLeave = () => {
     setHoveredIndex(null);
   };
+
+  const backgroundImage=  "url('./src/assets/safetybg2.avif')" 
+
   return (
     <div className=" bg-gray-50">
       <div className="relative pb-44 bg-gray-100  ">
         <div
           className=" h-[60rem] bg-cover bg-no-repeat bg-gray-600 z-50 "
-          style={{ backgroundImage: "url('./src/assets/safetybg2.avif')" }}
+          style={{ backgroundImage }}
         >
           <Header />
           <div className="mx-36 mt-36 flex items-center justify-center ">
