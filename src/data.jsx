@@ -3,6 +3,10 @@ import { GiSteeltoeBoots } from "react-icons/gi";
 import { HiUserGroup } from "react-icons/hi";
 import {FaHandshake, FaUserTie, } from "react-icons/fa"
 import {FaPeopleLine} from "react-icons/fa6"
+import bgimg2 from './assets/whatsapimg2.jpeg'
+import bgimg3 from './assets/whatsapimg3.jpeg'
+import bgimg4 from './assets/whatsapimg4.jpeg'
+
 
 // import {FcRules} from "react-icons/fc"
 // import codeofconduct from "./assets/codeofconduct.png"
@@ -1117,16 +1121,16 @@ export const history = [
   {
     text1: 'History',
     text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
-    img: './src/assets/whatsapimg2.jpeg'
+    img: bgimg2
   },
   {
     text1: 'Objectives',
     text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
-    img: './src/assets/whatsapimg3.jpeg'
+    img: bgimg3
   },
   {
     text1: 'Functions',
     text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
-    img: './src/assets/whatsapimg4.jpeg'
+    img: bgimg4
   },
 ]

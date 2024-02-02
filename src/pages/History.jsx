@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./pages.css";
 import { history } from "../data";
+// import bgimg2 from "../assets/"
 
 const History = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
