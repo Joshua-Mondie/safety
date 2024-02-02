@@ -6,6 +6,9 @@ import {FaPeopleLine} from "react-icons/fa6"
 import bgimg2 from './assets/whatsapimg2.jpeg'
 import bgimg3 from './assets/whatsapimg3.jpeg'
 import bgimg4 from './assets/whatsapimg4.jpeg'
+import whatsapA from './assets/whataimg2.jpeg'
+import whatsapB from './assets/whatappimg.jpeg'
+import whatsapC from './assets/award2.png'
 
 
 // import {FcRules} from "react-icons/fc"
@@ -1095,21 +1098,21 @@ export const datacal = [
 
 export const events = [
   {
-    bgImage: './src/assets/whataimg2.jpeg',
+    bgImage: whatsapA,
     btn: 'conference',
     date: 'Tuesday October 31, 2023',
     header: 'From The Annual Mandatory Professional Development Conference/AGM',
     location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
   },
   {
-    bgImage: './src/assets/whatappimg.jpeg',
+    bgImage: whatsapB,
     btn: 'conference',
     // date: 'Tuesday October 31, 2023',
     header: 'Modern Techonology And Safety Management System',
     // location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
   },
   {
-    bgImage: './src/assets/award2.png',
+    bgImage: whatsapC,
     btn: 'conference',
     // date: 'Tuesday October 31, 2023',
     header: 'Modern Techonology And Safety Management System',
