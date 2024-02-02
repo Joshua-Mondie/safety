@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import History from "./History";
 import { useState } from "react";
+import bgimg1 from "../assets/safetybg2.avif"
 
 // import Header from "./Header";
 // import RecentNews from "./RecentNews";
@@ -24,7 +25,7 @@ const HomePage = () => {
     setHoveredIndex(null);
   };
 
-  const backgroundImage=  "url('./src/assets/safetybg2.avif')" 
+  const backgroundImage=  `url(${bgimg1})`
 
   return (
     <div className=" bg-gray-50">
