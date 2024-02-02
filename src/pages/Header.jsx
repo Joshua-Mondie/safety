@@ -1,9 +1,13 @@
-import isponbg from "../assets/isponbg.png";
+// import isponbg from "../assets/isponbg.png";
 // import { MdOutlineArrowDropDown } from "react-icons/md";
 import { Link } from "react-router-dom";
 // import { useState } from "react";
 import { navLinks } from "../data";
-
+import { FiSearch } from "react-icons/fi";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io";
+import { BsTwitter } from "react-icons/bs";
+import safetylogo from "../assets/safetylogo.jpg.svg";
 
 const Header = () => {
   // const [isOpen, setIsOpen] = useState(false);
@@ -11,19 +15,68 @@ const Header = () => {
   //   setIsOpen(!isOpen);
   // };
   // const navigate = useNavigate();
-  
 
   return (
-    <div className=" fixed w-full z-20 lg:py-8  top-0 bg-white ">
-      <div className=" flex gap-x-40    px-6  items-center ">
-        {/* <div className="border  flex justify-betwen items-center"> */}
-        <img src={isponbg} alt="images here" className="w-10 h-10 md:w-[70px] md:h-[68px] " />
+    <div className=" w-full z-20   top-0 ">
+      <div className="  mx-20 h-52">
+        <div className="  h-[25%] bg-gray-100 flex items-center justify-between pl-16 pr-8">
+          <div className="flex items-center gap-x-6">
+            <span className=" text-gray-500">
+              <BsTwitter />
+            </span>
+            <span className="text-gray-500">
+              <FaFacebookF />
+            </span>
+            <span className="text-gray-500">
+              <FaLinkedinIn />
+            </span>
+            <span className="text-gray-500">
+              <IoLogoInstagram />
+            </span>
+          </div>
+          <h1 className=" font-sans text-gray-400 text-sm">
+            Open Hours of ISPON Mon - Fri: 8.00 am - 6.00 pm
+          </h1>
+          <span className=" text-2xl">
+            <FiSearch />
+          </span>
+        </div>
+        <div className=" h-[50%] flex bg-white py-4">
+          <div className=" w-1/5 ">
+            <img src={safetylogo} alt="" className="h-[100%] w-[100%]" />
+          </div>
+          <div className="w-4/5 flex  gap-x-10 items-center">
+            {navLinks.map((links, index) => (
+              <ul
+                key={index}
+                className={
+                  index === navLinks.length - 1 &&
+                  " md:w-[10rem] py-2 bg-green-600 rounded-full font-black text-[#FFFFFF] flex justify-center"
+                }
+              >
+                <li className=" font-custom font-black">
+                  <Link to={links.path}>{links.link}</Link>
+                </li>
+              </ul>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* <div className=" flex gap-x-40    px-6  items-center ">
+        <img
+          src={isponbg}
+          alt="images here"
+          className="w-10 h-10 md:w-[70px] md:h-[68px] "
+        />
 
         <div className="flex  text-black md:gap-x-10 items-center text-base  justify-center  md:py-4">
           {navLinks.map((links, index) => (
             <ul
               key={index}
-              className={index === navLinks.length - 1 && " md:w-[10rem] py-2 bg-[#000000] md:text-xl font-black text-[#FFFFFF] flex justify-center"}
+              className={
+                index === navLinks.length - 1 &&
+                " md:w-[10rem] py-2 bg-[#000000] md:text-xl font-black text-[#FFFFFF] flex justify-center"
+              }
             >
               <li className="text-xl font-black">
                 <Link to={links.path}>{links.link}</Link>
@@ -31,66 +84,7 @@ const Header = () => {
             </ul>
           ))}
         </div>
-
-        {/* <ul className="flex text-black gap-x-10 items-center text-base  justify-center  py-4">
-          <Link to="">
-            <li className="text-xl font-black">Home</li>
-          </Link>
-          <button className=" relative" onClick={onClick}>
-            <div className="flex items-center">
-              <li className="text-xl font-black">About</li>
-            </div>
-          </button>
-          <Link to="/branches">
-            <li className="text-xl font-black">Training & Certification</li>
-          </Link>
-
-          
-
-          <Link to="/nyscprogramme" className="flex items-center">
-            <li className="text-xl font-black">NYSC Program</li>
-          </Link>
-
-
-          <li className="text-xl font-black">Safety News</li>
-
-
-          <li className="text-xl font-black">Membership</li>
-          <li>
-            <button className=" w-[10rem] py-2 bg-[#000000] text-xl font-black text-[#FFFFFF]">
-              Contact Us
-            </button>
-          </li>
-        </ul> */}
-      </div>
-      {/* {isOpen && (
-        <div className=" absolute  ml-96 bg-white min-h-96 w-[40rem] text-2xl font-semibold">
-          <Link
-            to="/aboutispon"
-            className="border py-4 bg-gray-300  flex justify-center "
-          >
-            About ISPON
-          </Link>
-          <h1 className="border py-4 bg-gray-300  flex justify-center">
-            Objectives of ISPON
-          </h1>
-          <h1 className="border py-4 bg-gray-300  flex justify-center">
-            Board Members
-          </h1>
-          <h1 className="border py-4 bg-gray-300  flex justify-center">
-            Past Presidents
-          </h1>
-          <h1 className="border py-4 bg-gray-300  flex justify-center">
-            Disciplinary Committee
-          </h1>
-          <h1 className="border py-4 bg-gray-300  flex justify-center">
-            Professional Code of Conducts
-          </h1>
-          <h1 className="border py-4 bg-gray-300  flex justify-center">
-            Partnership & Collaboration
-          </h1>
-        </div>
-      )} */}
+      </div> */}
     </div>
   );
 };

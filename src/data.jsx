@@ -1,4 +1,15 @@
 import safetylogo from "./assets/safetylogo.jpg.svg";
+import { GiSteeltoeBoots } from "react-icons/gi";
+import { HiUserGroup } from "react-icons/hi";
+import {FaHandshake, FaUserTie, } from "react-icons/fa"
+import {FaPeopleLine} from "react-icons/fa6"
+
+// import {FcRules} from "react-icons/fc"
+// import codeofconduct from "./assets/codeofconduct.png"
+// import whatsapimg2 from './assets/whatsapimg2.jpeg'
+// import whatsapimg3 from './assets/whatsapimg3.jpeg'
+// import whatsapimg4 from './assets/whatsapimg4.jpeg'
+
 
 export const news = [
   {
@@ -1004,10 +1015,10 @@ export const names = [
 export const navLinks = [
   {
     link: "Home",
-    path: "/home",
+    path: "/",
   },
   {
-    link: "About",
+    link: "Pages",
     path: "/about",
   },
   {
@@ -1029,5 +1040,93 @@ export const navLinks = [
   {
     link: "Contact Us",
     path: "/contactus",
-  }
+  },
 ];
+
+export const boxes = [
+  {
+    icon:  <span className=" text-6xl ml-10 block text-green-400"><GiSteeltoeBoots /></span>,
+    text: <span className=" text-[0.8rem] font-bold">CODE OF CONDUCT</span>,
+  },
+  {
+    icon: <span className=" text-6xl ml-10 block text-green-400"><HiUserGroup /></span>,
+    text: <span className=" text-[0.8rem] font-bold">DESCIPLINARY COMMITEE</span>,
+  },
+  {
+    icon: <span className=" text-6xl ml-16 block text-green-400"><FaHandshake /></span>,
+    text: <span className=" text-[0.8rem] font-bold">PERTNERSHIP & COLLABORATION</span>,
+  },
+  {
+    icon: <span className=" text-6xl ml-5 block text-green-400"><FaUserTie/></span>,
+    text: <span className=" text-[0.8rem] font-bold">PAST PRESIDENT</span>,
+  },
+  {
+    icon: <span className=" text-6xl ml-5 block text-green-400"><FaPeopleLine /></span>,
+    text: <span className=" text-[0.8rem] font-bold"> BOARD MEMBERS</span>,
+  },
+];
+
+export const datacal = [
+  {
+    text1: '350',
+    text2: <h1 className="font-custom">YEARS OF <br /> FOUNDATION</h1>
+
+  },
+  {
+    text1: '26K',
+    text2: <h1 className="font-custom">PEOPLE IN <br /> THEE CITY</h1>
+
+  },
+  {
+    text1: '233',
+    text2: <h1 className="font-custom">SQUARE <br /> OF CITY</h1>
+
+  },
+  {
+    text1: '785',
+    text2: <h1 className="font-custom">SUCCESSFUL <br /> PROGRAMS</h1>
+
+  },
+]
+
+export const events = [
+  {
+    bgImage: './src/assets/whataimg2.jpeg',
+    btn: 'conference',
+    date: 'Tuesday October 31, 2023',
+    header: 'From The Annual Mandatory Professional Development Conference/AGM',
+    location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
+  },
+  {
+    bgImage: './src/assets/whatappimg.jpeg',
+    btn: 'conference',
+    // date: 'Tuesday October 31, 2023',
+    header: 'Modern Techonology And Safety Management System',
+    // location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
+  },
+  {
+    bgImage: './src/assets/award2.png',
+    btn: 'conference',
+    // date: 'Tuesday October 31, 2023',
+    header: 'Modern Techonology And Safety Management System',
+    // location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
+  },
+]
+
+export const history = [
+  {
+    text1: 'History',
+    text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
+    img: './src/assets/whatsapimg2.jpeg'
+  },
+  {
+    text1: 'Objectives',
+    text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
+    img: './src/assets/whatsapimg3.jpeg'
+  },
+  {
+    text1: 'Functions',
+    text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
+    img: './src/assets/whatsapimg4.jpeg'
+  },
+]

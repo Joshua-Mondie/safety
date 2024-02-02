@@ -6,5 +6,18 @@
     background-position: center;
     /* Additional background properties can be added as needed */
   }
+
+  /* styles.css */
+.transition-delay-100 {
+  transition: 1s;
+  animation-duration: 4s;
+}
+
+.transition-delay-200 {
+  transition-delay: 0.2s;
+}
+
+/* Add more classes for different delays as needed */
+
   
   

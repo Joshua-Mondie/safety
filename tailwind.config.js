@@ -9,7 +9,11 @@ export default {
       backgroundImage: {
         // 'hero-pattern': "url('path-to-your-image-file/background.jpg')",
         'hero-pattern': "url('./src/assets/bgimage.jpg')",
+        
 
+      },
+      fontFamily: {
+        'custom': ['quicksand'],
       },
     },
   },
