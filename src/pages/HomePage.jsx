@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import History from "./History";
 import { useState } from "react";
-import bgimg1 from "../assets/safetybg2.avif"
+import bgimg1 from "../assets/bg4.jpeg"
 // import one from  "../assets/one.jpg"
 
 // import Header from "./Header";
