@@ -1,5 +1,3 @@
-// import isponbg from "../assets/isponbg.png";
-// import { MdOutlineArrowDropDown } from "react-icons/md";
 import { Link } from "react-router-dom";
 // import { useState } from "react";
 import { navLinks } from "../data";
@@ -10,11 +8,23 @@ import { BsTwitter } from "react-icons/bs";
 import safetylogo from "../assets/safetylogo.jpg.svg";
 
 const Header = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const onClick = () => {
-  //   setIsOpen(!isOpen);
-  // };
-  // const navigate = useNavigate();
+  // const [open, isOpen] = useState(true)
+  // const
+
+  // const dropdownA = [
+  //   {
+  //     name: "hi",
+  //     route: "/hi",
+  //   },
+  //   {
+  //     name: "hello",
+  //     route: "/hi",
+  //   },
+  //   {
+  //     name: "yo",
+  //     route: "/h",
+  //   },
+  // ];
 
   return (
     <div className=" w-full z-20   top-0 ">
@@ -45,46 +55,35 @@ const Header = () => {
           <div className=" w-1/5 ">
             <img src={safetylogo} alt="" className="h-[100%] w-[100%]" />
           </div>
-          <div className="w-4/5 flex  gap-x-10 items-center">
+          <div className="w-4/5 flex gap-x-10 items-center dropdown">
             {navLinks.map((links, index) => (
               <ul
                 key={index}
                 className={
-                  index === navLinks.length - 1 &&
-                  " md:w-[10rem] py-2 bg-green-600 rounded-full font-black text-[#FFFFFF] flex justify-center"
+                  index === navLinks.length - 1
+                    ? "relative md:w-[10rem] py-2 bg-green-600 rounded-full font-black text-[#FFFFFF] flex hover:bg-black hover:text-white justify-center"
+                   : '' // Add your other class names here if needed
                 }
               >
-                <li className=" font-custom font-black">
+                <li className="font-custom font-bold">
                   <Link to={links.path}>{links.link}</Link>
                 </li>
               </ul>
             ))}
+            {/* <div className="absolute h-[10rem] w-11 grid-cols-1 bg-white ml-24 dropdown-content mt-[16.5rem]">
+
+            {dropdownA.map((dropdown, index) => (
+              <div key={index} className="">
+                <Link to={dropdown.route} className="">
+                  <span>{dropdown.name}</span>
+                  
+                </Link>
+              </div>
+            ))}
+            </div> */}
           </div>
         </div>
       </div>
-      {/* <div className=" flex gap-x-40    px-6  items-center ">
-        <img
-          src={isponbg}
-          alt="images here"
-          className="w-10 h-10 md:w-[70px] md:h-[68px] "
-        />
-
-        <div className="flex  text-black md:gap-x-10 items-center text-base  justify-center  md:py-4">
-          {navLinks.map((links, index) => (
-            <ul
-              key={index}
-              className={
-                index === navLinks.length - 1 &&
-                " md:w-[10rem] py-2 bg-[#000000] md:text-xl font-black text-[#FFFFFF] flex justify-center"
-              }
-            >
-              <li className="text-xl font-black">
-                <Link to={links.path}>{links.link}</Link>
-              </li>
-            </ul>
-          ))}
-        </div>
-      </div> */}
     </div>
   );
 };

@@ -1027,6 +1027,13 @@ export const navLinks = [
   {
     link: "Pages",
     path: "/about",
+    children:[
+      {
+        title: 'hello',
+        route: '/hello',
+
+      }
+    ]
   },
   {
     link: "Training & Certification",
@@ -1045,30 +1052,30 @@ export const navLinks = [
     path: "/membership",
   },
   {
-    link: "Contact Us",
+    link: "CONTACT US",
     path: "/contactus",
   },
 ];
 
 export const boxes = [
   {
-    icon:  <span className=" text-6xl ml-10 block text-green-400"><GiSteeltoeBoots /></span>,
+    icon:  <span className=" text-6xl ml-10 block "><GiSteeltoeBoots /></span>,
     text: <span className=" text-[0.8rem] font-bold">CODE OF CONDUCT</span>,
   },
   {
-    icon: <span className=" text-6xl ml-10 block text-green-400"><HiUserGroup /></span>,
+    icon: <span className=" text-6xl ml-12 block "><HiUserGroup /></span>,
     text: <span className=" text-[0.8rem] font-bold">DESCIPLINARY COMMITEE</span>,
   },
   {
-    icon: <span className=" text-6xl ml-16 block text-green-400"><FaHandshake /></span>,
+    icon: <span className=" text-6xl ml-16 block "><FaHandshake /></span>,
     text: <span className=" text-[0.8rem] font-bold">PERTNERSHIP & COLLABORATION</span>,
   },
   {
-    icon: <span className=" text-6xl ml-5 block text-green-400"><FaUserTie/></span>,
+    icon: <span className=" text-6xl ml-5 block "><FaUserTie/></span>,
     text: <span className=" text-[0.8rem] font-bold">PAST PRESIDENT</span>,
   },
   {
-    icon: <span className=" text-6xl ml-5 block text-green-400"><FaPeopleLine /></span>,
+    icon: <span className=" text-6xl ml-5 block"><FaPeopleLine /></span>,
     text: <span className=" text-[0.8rem] font-bold"> BOARD MEMBERS</span>,
   },
 ];
