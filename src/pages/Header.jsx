@@ -73,7 +73,7 @@ const Header = () => {
                 {links.submenmu && (
                   <div
                     className={` ${
-                      index === navLinks.length - 2 ? "absolute w-[20rem]  text-black mt-[21rem] pt-4 -ml-40 hidden bg-white group-hover:block" : "absolute w-[20rem] text-black mt-[47rem] pt-4 -ml-5 hidden bg-white group-hover:block"
+                      index === navLinks.length - 2 ? "absolute w-[20rem] text-black mt-[21rem] pt-4 -ml-40 hidden bg-white group-hover:block " : "absolute w-[20rem] text-black mt-[47rem] pt-4  -ml-5 hidden bg-white    group-hover:block "
                     }`}
                   >
                     {links.children.map((child, childIndex) => (
