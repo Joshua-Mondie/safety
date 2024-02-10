@@ -59,10 +59,10 @@ const Header = () => {
             {navLinks.map((links, index) => (
               <div
                 key={index}
-                className={`group   items-center flex h-full relative hover:text-green-500  font-custom ${
+                className={`group   items-center flex h-full relative  font-custom ${
                   index === navLinks.length - 1
-                    ? " md:w-[9rem] h-[3.5rem] border text-sm  py-2 bg-green-600 hover:text-white  rounded-full font-black  text-[#FFFFFF] flex hover:bg-black justify-center"
-                    : "" // Add your other class names here if needed
+                    ? "rounded-full text-sm h-8 py-6 px-6 bg-green-500 text-white hover:bg-slate-700"
+                    : "hover:text-green-500  font-[900]" // Add your other class names here if needed
                 }`}
               >
                 <span className="font-custom font-bold flex items-center gap-1 ">
