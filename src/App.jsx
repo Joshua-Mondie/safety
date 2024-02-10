@@ -31,6 +31,7 @@
 // import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import NyscProgramme from "./pages/NyscProgramme";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
         <Route path="/" element={<HomePage />}></Route>
+        <Route path="/nyscprogramme" element={<NyscProgramme/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

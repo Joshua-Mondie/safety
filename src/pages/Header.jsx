@@ -27,9 +27,9 @@ const Header = () => {
   // ];
 
   return (
-    <div className=" w-full z-20   top-0 ">
-      <div className="  mx-20 h-52">
-        <div className="  h-[25%] bg-gray-100 flex items-center justify-between pl-16 pr-8">
+    <div className=" w-full z-20   ">
+      <div className=" h-[10rem]">
+        <div className="  h-[3rem] bg-gray-100 flex items-center justify-between pl-16 pr-8 ">
           <div className="flex items-center gap-x-6">
             <span className=" text-gray-500">
               <BsTwitter />
@@ -51,7 +51,7 @@ const Header = () => {
             <FiSearch />
           </span>
         </div>
-        <div className=" h-[7rem] flex bg-white py-2 ">
+        <div className=" h-[7rem] flex gap-10  bg-white py-2  sticky">
           <div className=" w-[17%] ">
             <img src={safetylogo} alt="" className="h-[100%] w-[100%] py-2" />
           </div>
@@ -59,14 +59,14 @@ const Header = () => {
             {navLinks.map((links, index) => (
               <div
                 key={index}
-                className={`group   items-center flex h-full relative hover:text-green-500 font-custom ${
+                className={`group   items-center flex h-full relative hover:text-green-500  font-custom ${
                   index === navLinks.length - 1
-                    ? " md:w-[10rem] h-[4rem] border  py-2 bg-green-600 rounded-full font-black  text-[#FFFFFF] flex hover:bg-black justify-center"
+                    ? " md:w-[9rem] h-[3.5rem] border text-sm  py-2 bg-green-600 hover:text-white  rounded-full font-black  text-[#FFFFFF] flex hover:bg-black justify-center"
                     : "" // Add your other class names here if needed
                 }`}
               >
-                <span className="font-custom font-bold flex items-center gap-1">
-                  <Link to={links.path}>{links.link}</Link>
+                <span className="font-custom font-bold flex items-center gap-1 ">
+                  <Link to={links.path} className="">{links.link}</Link>
                   <span className="mt-1 text-lg">{links.icon}</span>
                 </span>
 

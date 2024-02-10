@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import History from "./History";
 import { useState } from "react";
-import bgimg1 from "../assets/bg5.jpeg"
+import bgimg1 from "../assets/bg5.jpeg";
 // import one from  "../assets/one.jpg"
 
 // import Header from "./Header";
@@ -26,7 +26,7 @@ const HomePage = () => {
     setHoveredIndex(null);
   };
 
-  const backgroundImage=  `url(${bgimg1})`
+  const backgroundImage = `url(${bgimg1})`;
 
   return (
     <div className=" bg-gray-50">
@@ -35,7 +35,9 @@ const HomePage = () => {
           className=" h-[60rem] bg-cover bg-no-repeat bg-gray-600 z-50 "
           style={{ backgroundImage }}
         >
-          <Header />
+          <div className=" mx-20 h-52">
+            <Header />
+          </div>
           <div className="mx-36 mt-36 flex items-center justify-center ">
             <div>
               <span className="text-white text-8xl font-custom ">
@@ -126,7 +128,6 @@ const HomePage = () => {
             </div>
           ))}
         </div>
-
       </div>
 
       {/* <div className="border h-[50vh] bgco" style={{ backgroundImage:one }}>
