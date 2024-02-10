@@ -106,7 +106,7 @@ const NyscProgramme = () => {
           // style={{ backgroundImage }}
         >
           <div>
-            <h1 className="text-black font-custom text-4xl font-bold ml-36">
+            <h1 className="text-black font-custom text-4xl font-bold ml-36 mb-10">
               Programme Objectives
             </h1>
             <div className="grid grid-cols-3 itemc gap-16 font-custom font-bold w-[50rem] ">
