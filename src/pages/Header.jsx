@@ -59,9 +59,9 @@ const Header = () => {
             {navLinks.map((links, index) => (
               <div
                 key={index}
-                className={`group   items-center flex h-full relative  font-custom ${
+                className={`group   items-center flex h-full   font-custom ${
                   index === navLinks.length - 1
-                    ? "rounded-full text-sm h-8 px-6 bg-green-500 text-white hover:bg-slate-700"
+                    ? "rounded-full text-sm  px-6 bg-green-500 text-white hover:bg-slate-700"
                     : "hover:text-green-500  font-[900]" // Add your other class names here if needed
                 }`}
               >
