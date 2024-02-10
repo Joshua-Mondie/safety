@@ -1,22 +1,21 @@
 import safetylogo from "./assets/safetylogo.jpg.svg";
 import { GiSteeltoeBoots } from "react-icons/gi";
 import { HiUserGroup } from "react-icons/hi";
-import {FaHandshake, FaUserTie, } from "react-icons/fa"
-import {FaPeopleLine} from "react-icons/fa6"
-import bgimg2 from './assets/whatsapimg2.jpeg'
-import bgimg3 from './assets/whatsapimg3.jpeg'
-import bgimg4 from './assets/whatsapimg4.jpeg'
-import whatsapA from './assets/whataimg2.jpeg'
-import whatsapB from './assets/whatappimg.jpeg'
-import img from './assets/img.jpeg'
-
+import { FaHandshake, FaUserTie } from "react-icons/fa";
+import { FaPeopleLine } from "react-icons/fa6";
+import bgimg2 from "./assets/whatsapimg2.jpeg";
+import bgimg3 from "./assets/whatsapimg3.jpeg";
+import bgimg4 from "./assets/whatsapimg4.jpeg";
+import whatsapA from "./assets/whataimg2.jpeg";
+import whatsapB from "./assets/whatappimg.jpeg";
+import img from "./assets/img.jpeg";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 // import {FcRules} from "react-icons/fc"
 // import codeofconduct from "./assets/codeofconduct.png"
 // import whatsapimg2 from './assets/whatsapimg2.jpeg'
 // import whatsapimg3 from './assets/whatsapimg3.jpeg'
 // import whatsapimg4 from './assets/whatsapimg4.jpeg'
-
 
 export const news = [
   {
@@ -1026,14 +1025,55 @@ export const navLinks = [
   },
   {
     link: "Pages",
-    path: "/about",
-    children:[
+    icon: <MdOutlineKeyboardArrowDown />,
+    path: "/pages",
+    submenmu: true,
+    children: [
       {
-        title: 'hello',
-        route: '/hello',
-
-      }
-    ]
+        title: "About Us",
+        route: "/aboutus",
+      },
+      {
+        title: "History of ISPON",
+        route: "/history",
+      },
+      {
+        title: "Objectives & Functions",
+        route: "/objectivesandfunctions",
+      },
+      {
+        title: "Safety Ethnics and Compliance Commitee",
+        route: "/safetyethnicsandcompliancecommitee",
+      },
+      {
+        title: "Disciplinary Commitee",
+        route: "/disciplinarycommitee",
+      },
+      {
+        title: "Divisions & Specialization",
+        route: "/divisionsandspecialization",
+      },
+      {
+        title: "Disciplinary Commitee",
+        route: "/disciplinarycommitee",
+      },
+      {
+        title: "Professional Code of Conduct",
+        route: "/professionalcodeofconduct",
+      },
+      {
+        title: "Partnership & Collaboration",
+        route: "/partnershipandcollaboration",
+      },
+      {
+        title: "Past Presidents",
+        route: "/pastpresidents",
+      },
+      {
+        title: "Board Members",
+        route: "/boardmembers",
+      },
+    ],
   },
   {
     link: "Training & Certification",
@@ -1049,7 +1089,27 @@ export const navLinks = [
   },
   {
     link: "Membership",
+    icon: <MdOutlineKeyboardArrowDown />,
     path: "/membership",
+    submenmu: true,
+    children:[
+      {
+        title: "Individual Membership",
+        route: "/individualmembership"
+      },
+      {
+        title: "Coperate Membership",
+        route: "/coperatemembership"
+      },
+      {
+        title: "Membership Fees",
+        route: "/membershipfees"
+      },
+      {
+        title: "Membership Register",
+        route: "/membershipregister"
+      },
+    ]
   },
   {
     link: "CONTACT US",
@@ -1059,88 +1119,129 @@ export const navLinks = [
 
 export const boxes = [
   {
-    icon:  <span className=" text-6xl ml-10 block "><GiSteeltoeBoots /></span>,
+    icon: (
+      <span className=" text-6xl ml-10 block ">
+        <GiSteeltoeBoots />
+      </span>
+    ),
     text: <span className=" text-[0.8rem] font-bold">CODE OF CONDUCT</span>,
   },
   {
-    icon: <span className=" text-6xl ml-12 block "><HiUserGroup /></span>,
-    text: <span className=" text-[0.8rem] font-bold">DESCIPLINARY COMMITEE</span>,
+    icon: (
+      <span className=" text-6xl ml-12 block ">
+        <HiUserGroup />
+      </span>
+    ),
+    text: (
+      <span className=" text-[0.8rem] font-bold">DESCIPLINARY COMMITEE</span>
+    ),
   },
   {
-    icon: <span className=" text-6xl ml-16 block "><FaHandshake /></span>,
-    text: <span className=" text-[0.8rem] font-bold">PERTNERSHIP & COLLABORATION</span>,
+    icon: (
+      <span className=" text-6xl ml-16 block ">
+        <FaHandshake />
+      </span>
+    ),
+    text: (
+      <span className=" text-[0.8rem] font-bold">
+        PERTNERSHIP & COLLABORATION
+      </span>
+    ),
   },
   {
-    icon: <span className=" text-6xl ml-5 block "><FaUserTie/></span>,
+    icon: (
+      <span className=" text-6xl ml-5 block ">
+        <FaUserTie />
+      </span>
+    ),
     text: <span className=" text-[0.8rem] font-bold">PAST PRESIDENT</span>,
   },
   {
-    icon: <span className=" text-6xl ml-5 block"><FaPeopleLine /></span>,
+    icon: (
+      <span className=" text-6xl ml-5 block">
+        <FaPeopleLine />
+      </span>
+    ),
     text: <span className=" text-[0.8rem] font-bold"> BOARD MEMBERS</span>,
   },
 ];
 
 export const datacal = [
   {
-    text1: '350',
-    text2: <h1 className="font-custom">YEARS OF <br /> FOUNDATION</h1>
-
+    text1: "350",
+    text2: (
+      <h1 className="font-custom">
+        YEARS OF <br /> FOUNDATION
+      </h1>
+    ),
   },
   {
-    text1: '26K',
-    text2: <h1 className="font-custom">PEOPLE IN <br /> THEE CITY</h1>
-
+    text1: "26K",
+    text2: (
+      <h1 className="font-custom">
+        PEOPLE IN <br /> THEE CITY
+      </h1>
+    ),
   },
   {
-    text1: '233',
-    text2: <h1 className="font-custom">SQUARE <br /> OF CITY</h1>
-
+    text1: "233",
+    text2: (
+      <h1 className="font-custom">
+        SQUARE <br /> OF CITY
+      </h1>
+    ),
   },
   {
-    text1: '785',
-    text2: <h1 className="font-custom">SUCCESSFUL <br /> PROGRAMS</h1>
-
+    text1: "785",
+    text2: (
+      <h1 className="font-custom">
+        SUCCESSFUL <br /> PROGRAMS
+      </h1>
+    ),
   },
-]
+];
 
 export const events = [
   {
     bgImage: whatsapA,
-    btn: 'conference',
-    date: 'Tuesday October 31, 2023',
-    header: 'From The Annual Mandatory Professional Development Conference/AGM',
-    location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
+    btn: "conference",
+    date: "Tuesday October 31, 2023",
+    header: "From The Annual Mandatory Professional Development Conference/AGM",
+    location: "Shehu Musa Yar’Adua Conference Centre, Abuja,FCT",
   },
   {
     bgImage: whatsapB,
-    btn: 'conference',
+    btn: "conference",
     // date: 'Tuesday October 31, 2023',
-    header: 'Modern Techonology And Safety Management System',
+    header: "Modern Techonology And Safety Management System",
     // location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
   },
   {
     bgImage: img,
-    btn: 'conference',
+    btn: "conference",
     // date: 'Tuesday October 31, 2023',
-    header: 'Thoughts Provoking Moments',
+    header: "Thoughts Provoking Moments",
     // location: 'Shehu Musa Yar’Adua Conference Centre, Abuja,FCT'
   },
-]
+];
 
 export const history = [
   {
-    text1: 'History',
-    text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
-    img: bgimg2
+    text1: "History",
+    text2:
+      "With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.",
+    img: bgimg2,
   },
   {
-    text1: 'Objectives',
-    text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
-    img: bgimg3
+    text1: "Objectives",
+    text2:
+      "With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.",
+    img: bgimg3,
   },
   {
-    text1: 'Functions',
-    text2: 'With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.',
-    img: bgimg4
+    text1: "Functions",
+    text2:
+      "With our rich history, diverse neighborhoods, and legacy of arts culture, and education, City has something for everyone.",
+    img: bgimg4,
   },
-]
+];

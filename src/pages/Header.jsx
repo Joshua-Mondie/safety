@@ -51,36 +51,43 @@ const Header = () => {
             <FiSearch />
           </span>
         </div>
-        <div className=" h-[50%] flex bg-white py-4">
-          <div className=" w-1/5 ">
-            <img src={safetylogo} alt="" className="h-[100%] w-[100%]" />
+        <div className=" h-[7rem] flex bg-white py-2 ">
+          <div className=" w-[17%] ">
+            <img src={safetylogo} alt="" className="h-[100%] w-[100%] py-2" />
           </div>
-          <div className="w-4/5 flex gap-x-10 items-center dropdown">
+          <div className="w-4/5 flex gap-x-10 items-center  dropdown">
             {navLinks.map((links, index) => (
-              <ul
+              <div
                 key={index}
-                className={
+                className={`group   items-center flex h-full relative hover:text-green-500 font-custom ${
                   index === navLinks.length - 1
-                    ? "relative md:w-[10rem] py-2 bg-green-600 rounded-full font-black text-[#FFFFFF] flex hover:bg-black hover:text-white justify-center"
-                   : '' // Add your other class names here if needed
-                }
+                    ? " md:w-[10rem] h-[4rem] border  py-2 bg-green-600 rounded-full font-black  text-[#FFFFFF] flex hover:bg-black justify-center"
+                    : "" // Add your other class names here if needed
+                }`}
               >
-                <li className="font-custom font-bold">
+                <span className="font-custom font-bold flex items-center gap-1">
                   <Link to={links.path}>{links.link}</Link>
-                </li>
-              </ul>
-            ))}
-            {/* <div className="absolute h-[10rem] w-11 grid-cols-1 bg-white ml-24 dropdown-content mt-[16.5rem]">
+                  <span className="mt-1 text-lg">{links.icon}</span>
+                </span>
 
-            {dropdownA.map((dropdown, index) => (
-              <div key={index} className="">
-                <Link to={dropdown.route} className="">
-                  <span>{dropdown.name}</span>
-                  
-                </Link>
+                {links.submenmu && (
+                  <div
+                    className={` ${
+                      index === navLinks.length - 2 ? "absolute w-[20rem]  text-black mt-[21rem] pt-4 -ml-40 hidden bg-white group-hover:block" : "absolute w-[20rem] text-black mt-[47rem] pt-4 -ml-5 hidden bg-white group-hover:block"
+                    }`}
+                  >
+                    {links.children.map((child, childIndex) => (
+                      <div
+                        key={childIndex}
+                        className={`border-b py-4 px-6 hover:bg-green-500 hover:text-white hover:transform transition hover:delay-100  `}
+                      >
+                        <Link to={child.route}>{child.title}</Link>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
-            </div> */}
           </div>
         </div>
       </div>
