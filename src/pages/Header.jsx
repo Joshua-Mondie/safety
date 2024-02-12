@@ -52,22 +52,22 @@ const Header = () => {
           </span>
         </div>
         <div className=" h-[7rem] flex gap-10  bg-white py-2  sticky">
-          <div className=" w-[17%] ">
+          <div className=" w-[12%]  ">
             <img src={safetylogo} alt="" className="h-[100%] w-[100%] py-2" />
           </div>
-          <div className="w-4/5 flex gap-x-10 items-center  dropdown">
+          <div className="w-4/5 flex gap-x-8 items-center  dropdown">
             {navLinks.map((links, index) => (
               <div
                 key={index}
                 className={`group    items-center flex   font-custom ${
                   index === navLinks.length - 1
-                    ? "rounded-full text-sm h-8 py-6 px-6 bg-green-500 text-white  hover:bg-slate-700 absolute right-10"
+                    ? "rounded-full text-sm h-8 py-6 px-6 bg-green-500 text-white  hover:bg-slate-700 absolute -right-10"
                     : "hover:text-green-500   h-28" // Add your other class names here if needed
                 }`}
               >
                 <span className="font-custom font-bold flex items-center gap-1 ">
                   <Link to={links.path} className="active:text-green-500">{links.link}</Link>
-                  <span className="mt-1 text-lg">{links.icon}</span>
+                  <span className="mt-1 text-base">{links.icon}</span>
                 </span>
 
                 {links.submenmu && (

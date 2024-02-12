@@ -1037,6 +1037,7 @@ export const navLinks = [
         title: "History of ISPON",
         route: "/history",
       },
+     
       {
         title: "Objectives & Functions",
         route: "/objectivesandfunctions",
@@ -1086,6 +1087,10 @@ export const navLinks = [
   {
     link: "Safety News",
     path: "/safetynew",
+  },
+  {
+    link: "Branches",
+    p: "/branches"
   },
   {
     link: "Membership",

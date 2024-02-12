@@ -32,6 +32,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import NyscProgramme from "./pages/NyscProgramme";
+import BranchesPage from "./pages/BranchesPage";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
         <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/nyscprogramme" element={<NyscProgramme/>}></Route>
+        <Route path="/branches" element={<BranchesPage/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -71,7 +71,7 @@ const NyscProgramme = () => {
   return (
     <div className="grid ">
       <div className="mb-20">
-        <div className=" h-[35rem] border bg-cover" style={{ backgroundImage }}>
+        <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
           <div
             className={`w-full  shadow-md ${
               isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
