@@ -1090,7 +1090,7 @@ export const navLinks = [
   },
   {
     link: "Branches",
-    p: "/branches"
+    path: "/branches"
   },
   {
     link: "Membership",
