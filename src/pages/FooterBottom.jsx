@@ -1,5 +1,5 @@
 import { MdLocationOn } from "react-icons/md";
-import { IoIosAlarm } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
 
@@ -19,13 +19,14 @@ const FooterBottom = () => {
             <span className="text-green-500 mt-1 text-xl">
               <FaPhoneAlt />
             </span>
-            +234(0)806 031 4610 & +234(0)811 014 1960
+            +234 703 762 8888 & +234 813 629 4444
           </span>
           <span className=" flex gap-4 hover:text-white">
             <span className="text-green-500 mt-1 text-xl">
-              <IoIosAlarm />
+              <MdEmail />
             </span>
-            info@ispon.gov.ng
+            info@safetyprofessionals.gov.ng <br />
+            President@safetyprofessionals.gov.ng
           </span>
         </div>
         <div className=" grid gap-y-5">

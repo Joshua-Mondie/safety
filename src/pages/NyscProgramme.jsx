@@ -69,31 +69,30 @@ const NyscProgramme = () => {
   const backgroundImage = `url(${bgimg1})`;
 
   return (
-    <div>
-      <div
-        className="relative h-[35rem] border bg-cover"
-        style={{ backgroundImage }}
-      >
-        <div
-          className={`w-full  shadow-md ${
-            isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
-          }`}
-        >
-          <Header />
+    <div className="grid ">
+      <div className="mb-20">
+        <div className=" h-[35rem] border bg-cover" style={{ backgroundImage }}>
+          <div
+            className={`w-full  shadow-md ${
+              isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
+            }`}
+          >
+            <Header />
+          </div>
         </div>
-      </div>
-      <div className="flex absolute justify-center -mt-[24rem] ml-[30rem] ">
-        <div>
-          <p className="mt-32 font-custom text-5xl text-white font-bold">
-            NYSC PROGRAMME
-          </p>
-          <p className="text-white ml-20 text-lg">Home / NYSC Programme</p>
+        <div className="flex  justify-center -mt-[24rem] mb-40  z-0">
+          <div>
+            <p className="mt-32 font-custom text-5xl text-white font-bold">
+              NYSC PROGRAMME
+            </p>
+            <p className="text-white ml-20 text-lg">Home / NYSC Programme</p>
+          </div>
         </div>
       </div>
 
       {/* <div className="w-[1361px] mx-auto border mt-8 h-[60rem] flex justify-center"> */}
-      <div className="w-full mb-40">
-        <h1 className="text-center font-normal text-gray-500 block w-[50rem] mx-72  font-custom text-lg mt-40">
+      <div className="w-full mb-40 mt-32 ">
+        <h1 className="text-center font-normal text-gray-500 block w-[50rem] mx-72  font-custom text-lg ">
           The NYSC Professional Development Programme is a scheme designed by
           Institute of Safety Professionals of Nigeria to enhance professional
           development of Nigerian graduates in line with the objectives of
@@ -117,14 +116,14 @@ const NyscProgramme = () => {
                   {" "}
                   {/* Added border class */}
                   <span className="">{obj.num}</span>
-                  <p className=" text-wrap text-gray-600 ">{obj.text}</p>
+                  <p className=" text-wrap text-gray-500 font-thin ">
+                    {obj.text}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
         </div>
-
-       
       </div>
       <Footer />
       {/* </div> */}
