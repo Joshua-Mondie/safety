@@ -33,15 +33,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import NyscProgramme from "./pages/NyscProgramme";
 import BranchesPage from "./pages/BranchesPage";
+import History from "./pages/History";
+import AboutPages from "./pages/AboutPages";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/nyscprogramme" element={<NyscProgramme/>}></Route>
-        <Route path="/branches" element={<BranchesPage/>}></Route>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/nyscprogramme" element={<NyscProgramme />}></Route>
+          <Route path="/branches" element={<BranchesPage />}></Route>
+          <Route path="/history" element={<History />}></Route>
+          <Route path="/aboutus" element={<AboutPages />}></Route>
+          <Route path="/contactus" element={<ContactUs/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

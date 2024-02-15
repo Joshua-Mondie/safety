@@ -6,7 +6,7 @@ import { datacal, events } from "../data";
 import Boxes from "./Boxes";
 import Footer from "./Footer";
 import Header from "./Header";
-import History from "./History";
+import History from "./HistoryIspon";
 import { useState } from "react";
 import bgimg1 from "../assets/bg5.jpeg";
 // import one from  "../assets/one.jpg"
