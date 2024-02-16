@@ -52,12 +52,22 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-20 mb-64 w-full flex gap-x-4 items-center justify-center ">
+      <div className=" mt-20 mb-64 grid grid-cols-2 px-72  gap-y-6   gap-x-[-96rem] ">
         {contact.map((contact, index) => (
-          <div key={index} className="px-5 relative flex flex-col font-custom text-white  items-center justify-center gap-y-0 bg-green-600 w-[25rem] shadow-2xl h-[14rem] hover:bg-white hover:text-black">
-            {/* <span className=" top-0 right-0 absolute border-l border-b rounded-full border-black h-28 w-28">{contact.icon}</span> */}
-            <span className="font-bold text-3xl ">{contact.text}</span>
-            <span className=" font-extralight text-md text-center mt-5">{contact.text2}</span>
+          <div
+            key={index}
+            className=" mx-0 relative overflow-hidden  flex flex-col duration-500 transition ease-in-out font-custom text-white  items-center justify-center gap-y-0 bg-green-600  w-[25rem] shadow-2xl h-[14rem] hover:bg-white group"
+          >
+          
+            <span className=" text-xl -top-11 rounded-full -right-10 absolute duration-500   bg-black  flex items-center pl-8 pt-8 h-28 w-28 group-hover:bg-green-600 group-hover:text-white">
+              {contact.icon}
+            </span>
+            <span className="font-bold text-3xl group-hover:text-black duration-500 ">
+              {contact.text}
+            </span>
+            <span className=" font-extralight text-md text-center mt-5 group-hover:text-black  duration-500">
+              {contact.text2}
+            </span>
           </div>
         ))}
       </div>

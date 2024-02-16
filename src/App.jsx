@@ -36,6 +36,8 @@ import BranchesPage from "./pages/BranchesPage";
 import History from "./pages/History";
 import AboutPages from "./pages/AboutPages";
 import ContactUs from "./pages/ContactUs";
+import TrainingAndCertification from "./pages/TrainingAndCertification";
+import IndividualMembership from "./pages/membership/IndividualMembership";
 
 const App = () => {
   return (
@@ -48,6 +50,8 @@ const App = () => {
           <Route path="/history" element={<History />}></Route>
           <Route path="/aboutus" element={<AboutPages />}></Route>
           <Route path="/contactus" element={<ContactUs/>}></Route>
+          <Route path="/training&certification" element={<TrainingAndCertification/>}></Route>
+          <Route path="/individualmembership" element={<IndividualMembership/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

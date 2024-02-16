@@ -59,25 +59,29 @@ const Header = () => {
             {navLinks.map((links, index) => (
               <div
                 key={index}
-                className={`group    items-center flex   font-custom ${
+                className={`group duration-500 transition ease-in-out     items-center flex   font-custom ${
                   index === navLinks.length - 1
                     ? "rounded-full text-sm h-8 py-6 px-6 bg-green-500 text-white  hover:bg-slate-700 absolute -right-10"
                     : "hover:text-green-500   h-28" // Add your other class names here if needed
                 }`}
               >
                 <span className="font-custom font-bold flex items-center gap-1 ">
-                  <Link to={links.path} className="active:text-green-500">{links.link}</Link>
+                  <Link to={links.path} className="active:text-green-500">
+                    {links.link}
+                  </Link>
                   <span className="mt-1 text-base">{links.icon}</span>
                 </span>
 
                 {links.submenmu && (
                   <div
                     className={` ${
-                      index === navLinks.length - 2 ? "absolute w-[20rem]  z-50 text-black mt-[22.2rem] pt-4 -ml-40 hidden bg-white group-hover:block shadow-lg" : "  z-50 shadow-lg absolute w-[20rem] text-black mt-[47.6rem]   -ml-5 hidden bg-white    group-hover:block "
+                      index === navLinks.length - 2
+                        ? "absolute w-[20rem]  z-50 text-black  mt-[22.2rem] pt-4 -ml-40 hidden bg-white group-hover:block shadow-lg"
+                        : "  z-50 shadow-lg absolute w-[20rem] pt-4 transition text-black mt-[42.6rem]   -ml-5 hidden bg-white    group-hover:block "
                     }`}
                   >
                     {links.children.map((child, childIndex) => (
-                      <div
+                      <div 
                         key={childIndex}
                         className={`border-b py-4 bg-white px-6 hover:bg-green-500 hover:text-white hover:transform transition hover:delay-100  `}
                       >

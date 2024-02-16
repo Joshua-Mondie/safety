@@ -1054,10 +1054,7 @@ export const navLinks = [
         title: "Divisions & Specialization",
         route: "/divisionsandspecialization",
       },
-      {
-        title: "Disciplinary Commitee",
-        route: "/disciplinarycommitee",
-      },
+      
       {
         title: "Professional Code of Conduct",
         route: "/professionalcodeofconduct",
@@ -1078,7 +1075,7 @@ export const navLinks = [
   },
   {
     link: "Training & Certification",
-    path: "/traning&certification",
+    path: "/training&certification",
   },
   {
     link: "NYSC Program",

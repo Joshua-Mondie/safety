@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import bgimg1 from "../assets/what2.jpeg";
+import bgimg1 from "../assets/aboutbg.jpeg";
 import Header from "./Header";
+import "./pages.css"
 
 const AboutPages = () => {
 
@@ -27,7 +28,7 @@ const AboutPages = () => {
   return (
     <div>
       <div className="mb-20">
-        <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
+        <div className=" h-[35rem]  bg-cover bg-no-repeat about" style={{ backgroundImage,  }}>
           <div
             className={`w-full  shadow-md ${
               isScrolled ? "fixed top-[-3rem] z-10 " : ""

@@ -64,7 +64,11 @@
   color: rgb(110, 172, 110);
 }
 
-/* Vector 1 */
+
+/* about page */
+.about{
+  background-position-y: -10rem;
+}
 
 
 
