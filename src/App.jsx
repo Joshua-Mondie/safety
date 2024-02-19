@@ -40,6 +40,10 @@ import TrainingAndCertification from "./pages/TrainingAndCertification";
 import IndividualMembership from "./pages/membership/IndividualMembership";
 import CoporateMembership from "./pages/membership/coporatemembership/CoporateMembership";
 import ImoStateBranch from "./pages/branches/imostatebranch/ImoStateBranch";
+import KwaraStateBranch from "./pages/branches/kwarastatebranch/KwaraStateBranch";
+import CrossRiverStateBranch from "./pages/branches/crossriverstatebranch/CrossRiverStateBranch";
+import OyoStateBranch from "./pages/branches/oyostatebranch/OyoStateBranch";
+import LagosState from "./pages/branches/lagosstatebranch/LagosState";
 
 const App = () => {
   return (
@@ -65,6 +69,10 @@ const App = () => {
             element={<CoporateMembership />}
           ></Route>
           <Route path="/imostatebranchschedule" element={<ImoStateBranch/>}></Route>
+          <Route path="/kwarastatebranchschedule" element={<KwaraStateBranch/>}></Route>
+          <Route path="/crossriverstatebranchschedule" element={<CrossRiverStateBranch/>}></Route>
+          <Route path="/oyostatebranchschedule" element={<OyoStateBranch/>}></Route>
+          <Route path="/lagosstatebranchschedule" element={<LagosState/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

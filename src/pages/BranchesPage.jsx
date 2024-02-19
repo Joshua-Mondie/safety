@@ -73,7 +73,7 @@ const BranchesPage = () => {
           </h1> */}
 
           <h1 className="text-xl ml-[26rem] font-medium font-custom text-[#444444] mb-10">
-            Click on each Branches to see schedule
+            Click on each Branches to see Training schedules
           </h1>
 
           <div className="grid grid-cols-2 px-72 gap-4">
