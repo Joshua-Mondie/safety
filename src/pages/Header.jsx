@@ -55,7 +55,7 @@ const Header = () => {
           <div className=" w-[12%]  ">
             <img src={safetylogo} alt="" className="h-[100%] w-[100%] py-2" />
           </div>
-          <div className="w-4/5 flex gap-x-8 items-center  dropdown">
+          <div className="w-4/5 flex gap-x-16 items-center  dropdown">
             {navLinks.map((links, index) => (
               <div
                 key={index}

@@ -38,6 +38,8 @@ import AboutPages from "./pages/AboutPages";
 import ContactUs from "./pages/ContactUs";
 import TrainingAndCertification from "./pages/TrainingAndCertification";
 import IndividualMembership from "./pages/membership/IndividualMembership";
+import CoporateMembership from "./pages/membership/coporatemembership/CoporateMembership";
+import ImoStateBranch from "./pages/branches/imostatebranch/ImoStateBranch";
 
 const App = () => {
   return (
@@ -49,9 +51,20 @@ const App = () => {
           <Route path="/branches" element={<BranchesPage />}></Route>
           <Route path="/history" element={<History />}></Route>
           <Route path="/aboutus" element={<AboutPages />}></Route>
-          <Route path="/contactus" element={<ContactUs/>}></Route>
-          <Route path="/training&certification" element={<TrainingAndCertification/>}></Route>
-          <Route path="/individualmembership" element={<IndividualMembership/>}></Route>
+          <Route path="/contactus" element={<ContactUs />}></Route>
+          <Route
+            path="/training&certification"
+            element={<TrainingAndCertification />}
+          ></Route>
+          <Route
+            path="/individualmembership"
+            element={<IndividualMembership />}
+          ></Route>
+          <Route
+            path="/coporatemembership"
+            element={<CoporateMembership />}
+          ></Route>
+          <Route path="/imostatebranchschedule" element={<ImoStateBranch/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
