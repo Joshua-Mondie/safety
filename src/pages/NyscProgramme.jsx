@@ -65,6 +65,64 @@ const NyscProgramme = () => {
       text: "To do all other things to enhance the development of Nigerian graduates in line with the institute's act and NYSC Decree",
     },
   ];
+  const nationalProgrammeCordinator = [
+    {
+      num: (
+        <span className=" h-10 w-10 justify-center items-center rounded-full flex bg-green-600 text-white">
+          1
+        </span>
+      ),
+      text: "Oversee the programme nationwide and directly supervise the Regional Programme Coordinators.",
+    },
+    {
+      num: (
+        <span className=" h-10 w-10 justify-center flex items-center rounded-full bg-green-600 text-white">
+          2
+        </span>
+      ),
+      text: "Provide policies and necessary directives for successful administration of the scheme.",
+    },
+    {
+      num: (
+        <span className=" h-10 w-10 justify-center flex items-center rounded-full bg-green-600 text-white">
+          3
+        </span>
+      ),
+      text: "Coordinate the timely payment and remittance of remuneration and other benefits for programme officials.",
+    },
+    {
+      num: (
+        <span className=" h-10 w-10 justify-center flex items-center rounded-full bg-green-600 text-white">
+          4
+        </span>
+      ),
+      text: "Provide orientation guidelines, training manuals and presentation guides for the scheme.",
+    },
+    {
+      num: (
+        <span className=" h-10 w-10 justify-center flex items-center rounded-full bg-green-600 text-white">
+          5
+        </span>
+      ),
+      text: "Be responsible to ensure that successful Corps members get their training certificates and membership certificates from the Institute.",
+    },
+    {
+      num: (
+        <span className=" h-10 w-10 justify-center flex items-center rounded-full bg-green-600 text-white">
+          6
+        </span>
+      ),
+      text: "Ensure the procurement of insurance policies for all programme coordinators.",
+    },
+    {
+      num: (
+        <span className=" h-10 w-10 justify-center flex items-center rounded-full bg-green-600 text-white">
+          7
+        </span>
+      ),
+      text: "Liaise with NYSC National Headquarters and provide programme report to NYSC as may be required.",
+    },
+  ];
 
   const backgroundImage = `url(${bgimg1})`;
 
@@ -91,7 +149,10 @@ const NyscProgramme = () => {
       </div>
 
       {/* <div className="w-[1361px] mx-auto border mt-8 h-[60rem] flex justify-center"> */}
-      <div className="w-full mb-40 mt-32 ">
+      <div className="w-full mb-[70rem] mt-32 ">
+        <h1 className="text-black font-custom text-4xl font-bold mb-10  flex justify-center">
+          Program Overview
+        </h1>
         <h1 className="text-center font-normal text-gray-500 block w-[50rem] mx-72  font-custom text-lg ">
           The NYSC Professional Development Programme is a scheme designed by
           Institute of Safety Professionals of Nigeria to enhance professional
@@ -100,18 +161,46 @@ const NyscProgramme = () => {
           Youth Services Corps Decree 1973, Strictly for serving Corps Members.
         </h1>
 
+        <h1 className="text-black font-custom mt-56 text-4xl font-bold mb-10  flex justify-center">
+          Orientation Exercise
+        </h1>
+        <h1 className="text-center font-normal text-gray-500 block w-[50rem] mx-72  font-custom text-lg ">
+          There shall be Orientation exercise in all the State of the
+          Federation. This shall be the direct responsibility of Programme
+          Coordinator in each State. Presentation guide to be used during the
+          orientation exercise shall be provided by the national headquaters and
+          all programme Coordinators shall ensure that the exercise is done to
+          the standard stipulated by the institute. State Programme Coordinators
+          should contact the Zonal Coordinator for support in this regard.
+        </h1>
+
         <div
           className="h-[40rem] w-full  mt-40 bg-cover flex justify-center py-10"
           // style={{ backgroundImage }}
         >
-          <div>
+          <div className="mb-80 ">
             <h1 className="text-black font-custom text-4xl font-bold ml-36 mb-10">
               Programme Objectives
             </h1>
-            <div className="grid grid-cols-3 itemc gap-16 font-custom font-bold w-[50rem] ">
+            <div className="grid grid-cols-3 itemc  font-custom font-bold w-[50rem] ">
               {" "}
               {/* Added grid class */}
               {objectives.map((obj, index) => (
+                <div key={index} className="  mt-10 flex gap-4  w-[14rem]">
+                  {" "}
+                  {/* Added border class */}
+                  <span className="">{obj.num}</span>
+                  <p className=" text-wrap text-gray-500 font-thin ">
+                    {obj.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <h1 className="text-black font-custom  text-4xl font-bold flex justify-center mt-40 ">National Program Cordinator</h1>
+            <div className="grid grid-cols-3 itemc  font-custom font-bold w-[50rem] ">
+              {" "}
+              {/* Added grid class */}
+              {nationalProgrammeCordinator.map((obj, index) => (
                 <div key={index} className="  mt-10 flex gap-4  w-[14rem]">
                   {" "}
                   {/* Added border class */}

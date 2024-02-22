@@ -795,7 +795,7 @@ export const navLinks = [
   {
     link: "Pages",
     icon: <MdOutlineKeyboardArrowDown />,
-    path: "/pages",
+    // path: "/pages",
     submenmu: true,
     children: [
       {
@@ -848,8 +848,8 @@ export const navLinks = [
     path: "/nyscprogramme",
   },
   {
-    link: "Safety News",
-    path: "/safetynew",
+    link: "Events",
+    path: "/events",
   },
   {
     link: "Branches",
@@ -858,7 +858,7 @@ export const navLinks = [
   {
     link: "Membership",
     icon: <MdOutlineKeyboardArrowDown />,
-    path: "/membership",
+    // path: "/membership",
     submenmu: true,
     children: [
       {
@@ -866,7 +866,7 @@ export const navLinks = [
         route: "/individualmembership",
       },
       {
-        title: "Coperate Membership",
+        title: "Coporate Membership",
         route: "/coporatemembership",
       },
       {
