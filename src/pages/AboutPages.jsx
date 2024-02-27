@@ -5,6 +5,7 @@ import pic1 from "../assets/pic1.png";
 import Header from "./Header";
 import "./pages.css";
 import Footer from "./Footer";
+import MediumNavBar from "./MediumNavBar";
 
 const AboutPages = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,11 @@ const AboutPages = () => {
   const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid">
-      <div className="mb-20">
+      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+        <MediumNavBar />
+      </div>
+
+      <div className="mb-20 hidden md:block">
         <div
           className=" h-[35rem]  bg-cover bg-no-repeat about"
           style={{ backgroundImage }}
@@ -51,10 +56,12 @@ const AboutPages = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-20 mb-64">
-        <div className="grid grid-cols-2 px-20 text-base gap-10 font-custom">
+      <div className="mt-40 md:mt-20 mb-64 ">
+        <div className="grid md:grid-cols-2 px-4 md:px-20 text-base gap-10 font-custom">
           <div className="mt-4">
-            <h1 className=" flex justify-center font-bold text-4xl">WELCOME TO ISPON</h1>
+            <h1 className="text-2xl flex justify-center font-bold md:text-4xl">
+              WELCOME TO ISPON
+            </h1>
 
             <h1 className="mt-8 text-justify text-base text-gray-500">
               The Institute of Safety Professionals of Nigeria (ISPON) is
@@ -78,7 +85,7 @@ const AboutPages = () => {
               the industries as they are valuable assets to their employers.
             </h1>
           </div>
-          <img src={pic1} alt="" className="w-[40rem] h-[35rem]" />
+          <img src={pic1} alt="" className="h-[18rem] w-[40rem] md:h-[35rem]" />
         </div>
       </div>
       <Footer />

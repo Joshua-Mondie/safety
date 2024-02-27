@@ -1,9 +1,10 @@
 // import React from 'react'
 import { useState, useEffect } from "react";
 import Header from "../Header";
-import bgimg1 from "../../assets/bg5.jpeg";
+import bgimg1 from "../../assets/eventsbg.png";
 import Footer from "../Footer";
 import { event } from "./event";
+import MediumNavBar from "../MediumNavBar";
 
 const Events = () => {
   const backgroundImage = `url(${bgimg1})`;
@@ -26,12 +27,15 @@ const Events = () => {
     };
   }, []);
   return (
-    <div className="grid">
+    <div className="md:grid w-full">
+      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+        <MediumNavBar />
+      </div>
       <div className="mb-20">
-        <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
+        <div className="hidden md:block h-[35rem]  bg-cover" style={{ backgroundImage }}>
           <div
             className={`w-full  shadow-md ${
-              isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
+              isScrolled ? "fixed md:top-[-3rem] z-10 bg-white" : ""
             }`}
           >
             <Header />
@@ -46,11 +50,11 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="mt-20 mb-48 grid grid-cols-4 px-10 ">
+      <div className="mt-20 mb-48 grid md:grid-cols-4 px-10 ">
         {
           event.map((event,index)=>(
             <div key={index}>
-              <img src={event.img} alt="" className="h-[15rem] w-[28rem]"/>
+              <img src={event.img} alt="" className="my-2 md:my-0 md:h-[15rem] w-[28rem]"/>
             </div>
           ))
         }

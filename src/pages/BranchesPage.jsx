@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 // import { names } from "../data";
 import Header from "./Header";
-import bgimg1 from "../assets/bg5.jpeg";
+import bgimg1 from "../assets/branchesbg.png";
 // import {RiArrowDropDownLine, RiArrowDropUpLine} from "react-icons/ri"
 import "./pages.css";
 import Footer from "./Footer";
 import { branches } from "./branches/branches";
 import { Link } from "react-router-dom";
+import MediumNavBar from "./MediumNavBar";
 
 const BranchesPage = () => {
   // const [selectedDivs, setSelectedDivs] = useState(
@@ -44,8 +45,11 @@ const BranchesPage = () => {
 
   return (
     <div className="grid">
+      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+        <MediumNavBar />
+      </div>
       <div className="mb-20">
-        <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
+        <div className="md:block hidden h-[35rem]  bg-cover" style={{ backgroundImage }}>
           <div
             className={`w-full  shadow-md ${
               isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
@@ -65,18 +69,18 @@ const BranchesPage = () => {
       </div>
 
       <div className=" flex items-center justify-center mt-16  mb-40">
-        <div className=" w-[1198px]">
+        <div className="px-4 md:w-[1198px]">
           {/* <h1 className="text-2xl ml-[32rem] font-medium font-custom text-[#444444] mb-10">
             Branches:
             <br />
             <br />
           </h1> */}
 
-          <h1 className="text-xl ml-[26rem] font-medium font-custom text-[#444444] mb-10">
+          <h1 className="text-xl  text-center font-medium font-custom text-[#444444] mb-10">
             Click on each Branches to see Training schedules
           </h1>
 
-          <div className="grid grid-cols-2 px-72 gap-4">
+          <div className="grid md:grid-cols-2 md:px-72 gap-4">
             {branches.map((branch, index) => (
               <Link
                 to={branch.route}

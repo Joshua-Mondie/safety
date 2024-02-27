@@ -19,16 +19,16 @@ const Footer = () => {
   };
 
   return (
-    <div className="h-[80vh] bg-gray-900 relative ">
-      <div className="h-[30vh] bg-green-600 mx-10 w-[85rem] flex justify-center items-center gap-10 -mt-28 absolute">
-        <h2 className=" font-semibold  text-4xl text-white font-custom">
+    <div className=" md:h-[80vh]  bg-gray-900 relative ">
+      <div className=" w-[90vw] py-10 md:py-0 px-5  md:h-[30vh] mx-4 bg-green-600 md:mx-10 md:w-[85rem] md:flex justify-center items-center md:gap-10 -mt-28 absolute">
+        <h2 className=" font-semibold  text-4xl text-white font-custom mb-5 md:mb-0">
           Stay Connected
         </h2>
         <form
           onSubmit={handleSubmit}
-          className="flex  gap-10 max-w-[68rem] items-center justify-center"
+          className="md:flex  gap-10 max-w-[68rem] items-center justify-center"
         >
-          <div className="mb-4">
+          <div className="mb-8 md:mb-4">
             {/* <label htmlFor="name" className="block text-sm font-bold mb-2">
               Name
             </label> */}
@@ -38,12 +38,12 @@ const Footer = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-[20rem] border-b px-4 text-white py-2 focus:outline-none select-none placeholder:text-white  bg-green-600 placeholder-italic"
+              className="md:w-[20rem] border-b px-4 text-white py-2 focus:outline-none select-none placeholder:text-white  bg-green-600 placeholder-italic"
               placeholder=" Your Name *"
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-10 md:mb-4">
             {/* <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
               Email
             </label> */}
@@ -53,7 +53,7 @@ const Footer = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-[20rem] border-b px-4 text-white py-2 focus:outline-none select-none placeholder:text-white  bg-green-600 placeholder-italic"
+              className="md:w-[20rem] border-b px-4 text-white py-2 focus:outline-none select-none placeholder:text-white  bg-green-600 placeholder-italic"
               placeholder="Your Email *"
               required
             />
@@ -66,7 +66,7 @@ const Footer = () => {
           </button>
         </form>
       </div>
-      <div className=" border-white h-full ">
+      <div className=" border-white h-full  md:mt-0 ">
         <FooterBottom />
       </div>
     </div>

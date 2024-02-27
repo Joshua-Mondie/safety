@@ -8,29 +8,13 @@ import { BsTwitter } from "react-icons/bs";
 import safetylogo from "../assets/safetylogo.jpg.svg";
 
 const Header = () => {
-  // const [open, isOpen] = useState(true)
-  // const
-
-  // const dropdownA = [
-  //   {
-  //     name: "hi",
-  //     route: "/hi",
-  //   },
-  //   {
-  //     name: "hello",
-  //     route: "/hi",
-  //   },
-  //   {
-  //     name: "yo",
-  //     route: "/h",
-  //   },
-  // ];
+  
 
   return (
-    <div className=" w-full z-20   ">
-      <div className=" h-[10rem]">
-        <div className="  h-[3rem] bg-gray-100 flex items-center justify-between pl-16 pr-8 ">
-          <div className="flex items-center gap-x-6">
+    <div className=" md:w-full z-20   ">
+      <div className="  h-[10rem]">
+        <div className=" w-full  h-[3rem] bg-gray-100 md:flex items-center justify-between md:pl-16 pr-8 ">
+          <div className="flex  items-center gap-x-6">
             <span className=" text-gray-500">
               <BsTwitter />
             </span>
@@ -47,11 +31,13 @@ const Header = () => {
           <h1 className=" font-sans text-gray-400 text-sm">
             Open Hours of ISPON Mon - Fri: 8.00 am - 6.00 pm
           </h1>
-          <span className=" text-2xl">
+          <span className=" text-2xl ">
             <FiSearch />
           </span>
         </div>
-        <div className=" h-[7rem] flex gap-10  bg-white py-2  sticky">
+        
+        
+        <div className="hidden h-[7rem] md:flex gap-10  bg-white py-2  sticky">
           <div className=" w-[12%]  ">
             <img src={safetylogo} alt="" className="h-[100%] w-[100%] py-2" />
           </div>

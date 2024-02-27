@@ -1,8 +1,9 @@
 // import React from 'react'
 import { useState, useEffect } from "react";
 import Header from "./Header";
-import bgimg1 from "../assets/bg5.jpeg";
+import bgimg1 from "../assets/disciplinarybg.png";
 import Footer from "./Footer";
+import MediumNavBar from "./MediumNavBar";
 
 const DisciplinaryCommitee = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,8 +26,12 @@ const DisciplinaryCommitee = () => {
     };
   }, []);
   return (
-    <div className="grid">
-      <div className="">
+    <div className="grid ">
+      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+        <MediumNavBar />
+      </div>
+
+      <div className="hidden md:block">
         <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
           <div
             className={`w-full  shadow-md ${
@@ -47,54 +52,54 @@ const DisciplinaryCommitee = () => {
           </div>
         </div>
       </div>
-      <div className="mt-40 mb-32 ">
-        <div className=" text-4xl flex justify-center mb-20">
+      <div className="mt-40 mb-32  border">
+        <div className="text-2xl md:text-4xl flex justify-center mb-20">
           The Disciplinary Rules
         </div>
-        <div className="grid relative  grid-cols-2 gap-10 justify-center px-40 mt-10 font-custom mb-40">
-          <span className=" leading-relaxed ">
+        <div className="grid md:relative   w-full  md:grid-cols-2 gap-10 justify-center md:px-40 mt-10 font-custom mb-40">
+          <div className=" flex gap-3  text-wrap  px-4 md:px-0">
             {" "}
-            <span className="px-3 py-2 justify-center items-center bg-green-400 text-white rounded-full">
-              1.
+            <span className="h-8 w-20 md:h-9 md:w-14  flex justify-center items-center bg-green-400 text-white rounded-full ">
+              1
             </span>
             Sections 13 and 14 of the Institute of Safety Professionals of
             Nigeria Act, 2014, are hereby applicable.
-          </span>
-          <span>
+          </div>
+          <div className="flex gap-3 text-wrap px-4 md:px-0">
             {" "}
-            <span className=" px-3 py-2 bg-green-400 text-white rounded-full">
-              2.
+            <span className="h-8 w-20  md:h-9 md:w-14  flex justify-center items-center bg-green-400 text-white rounded-full ">
+              2
             </span>
             All ISPON members are required to comply with Code of Conduct made
             by the Governing Board.
-          </span>
-          <span>
+          </div>
+          <div className="flex gap-3 px-5 md:px-0">
             {" "}
-            <span className=" px-3 py-2 bg-green-400 text-white rounded-full">
-              3.
+            <span className="h-8 w-52  md:h-9 md:w-32  flex justify-center items-center bg-green-400 text-white rounded-full  ">
+              3
             </span>
             Any member who contravenes the Code of Conduct or who behaves in a
             manner which amounts to unacceptable professional conduct or which
             is prejudicial to the interests of the Institute shall be liable to
             disciplinary action.
-          </span>
-          <span className="">
+          </div>
+          <div className="flex gap-3 px-8 text-justify md:px-0">
             {" "}
-            <span className=" px-3 py-2 bg-green-400 text-white rounded-full">
+            <span className="h-9 w-24  flex justify-center items-center bg-green-400 text-white rounded-full  ">
               4.
             </span>
             The Disciplinary Committee shall have the duty to consider and
             determine cases of professional misconduct referred to it, as
             provided in section 13 of ISPON Act 2014.
-          </span>
-          <span className="ml-64 absolute w-[32rem] mt-56 "> 
+          </div>
+          <div className="px-8 md:px-0 md:ml-[28rem] md:absolute md:w-[32rem] md:mt-56 flex gap-3">
             {" "}
-            <span className=" px-3 py-2  bg-green-400 text-white rounded-full">
+            <span className="h-9 w-20  flex justify-center items-center bg-green-400 text-white rounded-full  ">
               5.
             </span>
             The Committee shall consist of a Chairman and four other members of
             the Board of the Institute appointed by the Board.
-          </span>
+          </div>
         </div>
       </div>
       <Footer />

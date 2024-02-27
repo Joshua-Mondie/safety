@@ -52,13 +52,12 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-20 mb-64 grid grid-cols-2 px-72  gap-y-6   gap-x-[-96rem] ">
+      <div className="px-6 mt-20 md:mb-64 grid lg:grid-cols-2 lg:px-72  gap-y-6   gap-x-[-96rem] ">
         {contact.map((contact, index) => (
           <div
             key={index}
             className=" mx-0 relative overflow-hidden  flex flex-col duration-500 transition ease-in-out font-custom text-white  items-center justify-center gap-y-0 bg-green-600  w-[25rem] shadow-2xl h-[14rem] hover:bg-white group"
           >
-          
             <span className=" text-xl -top-11 rounded-full -right-10 absolute duration-500   bg-black  flex items-center pl-8 pt-8 h-28 w-28 group-hover:bg-green-600 group-hover:text-white">
               {contact.icon}
             </span>
@@ -71,15 +70,17 @@ const ContactUs = () => {
           </div>
         ))}
       </div>
-      <div className=" w-full  bg-black border-black font-custom">
-        <div className=" h-3/4 mt-20 w-full text-gray-300 grid grid-cols-2 place-items-center items-center justify-around">
-          <div className="grid gap-y-5">
+      <div className="border py-6 md:py-0 mt-40 md:mt-0 mx-4 md:mx-0 bg-gray-800 border-black font-custom">
+        <div className="px-5  h-[16rem]  text-gray-300 md:flex items-center justify-around">
+          <div className="   md:mt-20 px-4 md:p-0 grid grid-cols-1  gap-y-5 ">
             <span className="flex gap-4  hover:text-white">
               <span className="text-green-500 mt-1 text-2xl ">
                 <MdLocationOn />
               </span>
-              Dominic Aigbogun House <br /> 46 Ikotun/Isolo Road by Bolorunpelu
-              Bus-stop Ikotun, <br /> Lagos State Nigeria.
+              <span className="">
+                Dominic Aigbogun House <br /> 46 Ikotun/Isolo Road by
+                Bolorunpelu Bus-stop Ikotun, <br /> Lagos State Nigeria.
+              </span>
             </span>
             <span className="flex gap-4 hover:text-white">
               <span className="text-green-500 mt-1 text-xl">
@@ -87,15 +88,19 @@ const ContactUs = () => {
               </span>
               +234 703 762 8888 & +234 813 629 4444
             </span>
-            <span className=" flex gap-4 hover:text-white">
+            <span className=" flex gap-4 hover:text-white ">
               <span className="text-green-500 mt-1 text-xl">
                 <MdEmail />
               </span>
-              info@safetyprofessionals.gov.ng <br />
-              President@safetyprofessionals.gov.ng
+              <span className=" text-sm md:text-base">
+                info@safetyprofessionals.gov.ng <br />
+                <span className="absolute md:relative left-9 md:left-0 md:mt-0 mt-2   ">
+                  President@safetyprofessionals.gov.ng
+                </span>
+              </span>
             </span>
           </div>
-          <div className=" grid gap-y-5">
+          <div className="  gap-y-5 mt-20 hidden md:grid ">
             <span className="hover:text-green-600 ">Cookie policy</span>
             <span className="hover:text-green-600 ">
               Membership certificate
@@ -104,11 +109,10 @@ const ContactUs = () => {
             <span className="hover:text-green-600 ">Forums</span>
             <span className="hover:text-green-600 ">Give us your feedback</span>
           </div>
-
-          <div className=" text-gray-300 mt-10 self-center items-center  w-full flex   ">
-            © 2024 Institute of Safety Professionals of Nigeria | All Rights
-            Reserved
-          </div>
+        </div>
+        <div className=" text-gray-300 hidden md:block  w-full  justify-center mt-10  md:mt-10 ">
+          © 2024 Institute of Safety Professionals of Nigeria | All Rights
+          Reserved
         </div>
       </div>
     </div>

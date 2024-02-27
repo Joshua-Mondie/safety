@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Header from "./Header";
-import bgimg1 from "../assets/bg5.jpeg";
+import bgimg1 from "../assets/nyscbg.png";
 import Footer from "./Footer";
+import MediumNavBar from "./MediumNavBar";
 
 const NyscProgramme = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -127,8 +128,12 @@ const NyscProgramme = () => {
   const backgroundImage = `url(${bgimg1})`;
 
   return (
-    <div className="grid ">
-      <div className="mb-20">
+    <div className="md:grid ">
+      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+        <MediumNavBar />
+      </div>
+
+      <div className="mb-20 hidden md:block">
         <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
           <div
             className={`w-full  shadow-md ${
@@ -149,11 +154,11 @@ const NyscProgramme = () => {
       </div>
 
       {/* <div className="w-[1361px] mx-auto border mt-8 h-[60rem] flex justify-center"> */}
-      <div className="w-full mb-[70rem] mt-32 ">
-        <h1 className="text-black font-custom text-4xl font-bold mb-10  flex justify-center">
+      <div className=" md:mb-[50rem] mt-32 px-8 grid  md:px-0  mb-[90rem]">
+        <h1 className="text-2xl text-black font-custom md:text-4xl font-bold mb-10  w-full  flex justify-center">
           Program Overview
         </h1>
-        <h1 className="text-center font-normal text-gray-500 block w-[50rem] mx-72  font-custom text-lg ">
+        <h1 className="md:text-center  text-justify font-normal text-gray-500 block md:w-[50rem] md:mx-72  font-custom text-lg ">
           The NYSC Professional Development Programme is a scheme designed by
           Institute of Safety Professionals of Nigeria to enhance professional
           development of Nigerian graduates in line with the objectives of
@@ -161,10 +166,10 @@ const NyscProgramme = () => {
           Youth Services Corps Decree 1973, Strictly for serving Corps Members.
         </h1>
 
-        <h1 className="text-black font-custom mt-56 text-4xl font-bold mb-10  flex justify-center">
+        <h1 className="text-black text-2xl font-custom mt-56 md:text-4xl font-bold mb-10  flex justify-center">
           Orientation Exercise
         </h1>
-        <h1 className="text-center font-normal text-gray-500 block w-[50rem] mx-72  font-custom text-lg ">
+        <h1 className="text-justify md:text-center font-normal text-gray-500 block md:w-[50rem] md:mx-72  font-custom text-lg ">
           There shall be Orientation exercise in all the State of the
           Federation. This shall be the direct responsibility of Programme
           Coordinator in each State. Presentation guide to be used during the
@@ -175,18 +180,18 @@ const NyscProgramme = () => {
         </h1>
 
         <div
-          className="h-[40rem] w-full  mt-40 bg-cover flex justify-center py-10"
+          className=" h-[40rem] w-full mb-[28rem] md:mb-0  mt-40 bg-cover md:flex justify-center py-10"
           // style={{ backgroundImage }}
         >
           <div className="mb-80 ">
-            <h1 className="text-black font-custom text-4xl font-bold ml-36 mb-10">
+            <h1 className=" text-2xl text-black  text-center font-custom md:text-4xl font-bold md:ml-36 mb-10">
               Programme Objectives
             </h1>
-            <div className="grid grid-cols-3 itemc  font-custom font-bold w-[50rem] ">
+            <div className="grid md:grid-cols-3 md:gap-6   font-custom font-bold md:w-[50rem] ">
               {" "}
               {/* Added grid class */}
               {objectives.map((obj, index) => (
-                <div key={index} className="  mt-10 flex gap-4  w-[14rem]">
+                <div key={index} className="  mt-10 flex gap-4  ">
                   {" "}
                   {/* Added border class */}
                   <span className="">{obj.num}</span>
@@ -196,12 +201,14 @@ const NyscProgramme = () => {
                 </div>
               ))}
             </div>
-            <h1 className="text-black font-custom  text-4xl font-bold flex justify-center mt-40 ">National Program Cordinator</h1>
-            <div className="grid grid-cols-3 itemc  font-custom font-bold w-[50rem] ">
+            <h1 className="text-black text-center  text-2xl font-custom  md:text-4xl font-bold flex justify-center mt-40 ">
+              National Program Cordinator
+            </h1>
+            <div className="grid md:grid-cols-3 md:gap-6   font-custom font-bold md:w-[50rem] ">
               {" "}
               {/* Added grid class */}
               {nationalProgrammeCordinator.map((obj, index) => (
-                <div key={index} className="  mt-10 flex gap-4  w-[14rem]">
+                <div key={index} className="  mt-10 flex gap-4 ">
                   {" "}
                   {/* Added border class */}
                   <span className="">{obj.num}</span>
