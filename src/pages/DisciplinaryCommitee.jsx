@@ -1,13 +1,13 @@
 // import React from 'react'
 import { useState, useEffect } from "react";
 import Header from "./Header";
-// import bgimg1 from "../assets/disciplinarybg.png";
+import bgimg1 from "../assets/disciplinarybg.png";
 import Footer from "./Footer";
 import MediumNavBar from "./MediumNavBar";
 
 const DisciplinaryCommitee = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  // const backgroundImage = `url(${bgimg1})`;
+  const backgroundImage = `url(${bgimg1})`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,12 +27,12 @@ const DisciplinaryCommitee = () => {
   }, []);
   return (
     <div className="grid ">
-      <div className="w-full block md:hidden h-80" >
+      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
         <MediumNavBar />
       </div>
 
       <div className="hidden md:block">
-        <div className=" h-[35rem]  bg-cover" >
+        <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
           <div
             className={`w-full  shadow-md ${
               isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
