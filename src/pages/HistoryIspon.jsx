@@ -22,7 +22,7 @@ const History = () => {
           className="bg-cover bg-no-repeat h-full  w-full relative"
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
-          style={{ backgroundImage: `url('${historyItem.img}')` }}
+          style={{backgroundImage: `url('${historyItem.img}')` }}
         >
           <div
             className={`h-full mt-4 md:mt-0 flex pl-10 ${
