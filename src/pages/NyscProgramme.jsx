@@ -176,7 +176,7 @@ const NyscProgramme = () => {
           orientation exercise shall be provided by the national headquaters and
           all programme Coordinators shall ensure that the exercise is done to
           the standard stipulated by the institute. State Programme Coordinators
-          should contact the Zonal Coordinator for support in this regard.llllll
+          should contact the Zonal Coordinator for support in this regard.
         </h1>
 
         <div
