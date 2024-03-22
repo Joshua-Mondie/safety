@@ -70,6 +70,7 @@ const DivisionsAndSpecialization = () => {
             </p>
           </div>
         ))}
+        ffffff
       </div>
       <Footer />
     </div>
