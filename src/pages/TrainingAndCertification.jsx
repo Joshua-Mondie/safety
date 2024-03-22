@@ -34,9 +34,7 @@ const TrainingAndCertification = () => {
               isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
             }`}
           >
-            {/* <div className=" absolute h-full w-full bg-gray-400 opacity-45 flex items-center text-white font-semibold text-lg">
-              hello
-            </div> */}
+            
             <Header />
           </div>
         </div>
