@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 // import { names } from "../data";
 import Header from "./Header";
 import bgimg1 from "../assets/branchesbg.png";
@@ -22,38 +22,38 @@ const BranchesPage = () => {
   //   setSelectedDivs(newSelectedDivs);
   // };
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     if (scrollTop > 100) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const backgroundImage = `url(${bgimg1})`;
 
   return (
     <div className="grid">
-      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+      <div className="w-full block md:hidden h-80"
+       style={{ backgroundImage }}
+       >
         <MediumNavBar />
       </div>
       <div className="mb-20">
         <div className="md:block hidden h-[35rem]  bg-cover" style={{ backgroundImage }}>
           <div
-            className={`w-full  shadow-md ${
-              isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
-            }`}
+            className={`w-full  shadow-md `}
           >
             <Header />
           </div>

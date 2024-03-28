@@ -6,29 +6,29 @@ import oyostatebranchD from "../../../assets/oyostatebranchD.png";
 import oyostatebranchE from "../../../assets/oyostatebranchE.png";
 // import oyostatebranchF from "../../../assets/oyostatebranchF.png";
 
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Header from "../../Header";
 import bgimg1 from "../../../assets/bg5.jpeg";
 
 const OyoStateBranch = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     if (scrollTop > 100) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   const backgroundImage = `url(${bgimg1})`;
 
   return (
@@ -36,9 +36,7 @@ const OyoStateBranch = () => {
       <div className="mb-20">
         <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
           <div
-            className={`w-full  shadow-md ${
-              isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
-            }`}
+            className={`w-full  shadow-md`}
           >
             <Header />
           </div>

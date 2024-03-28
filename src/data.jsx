@@ -335,10 +335,7 @@ export const navLinks = [
         title: "Past Presidents",
         route: "/pastpresidents",
       },
-      {
-        title: "Board Members",
-        route: "/boardmembers",
-      },
+      
     ],
   },
 
@@ -346,6 +343,7 @@ export const navLinks = [
     link: "NYSC Program",
     path: "/nyscprogramme",
   },
+  
   {
     link: "Events",
     path: "/events",
@@ -378,6 +376,11 @@ export const navLinks = [
       },
     ],
   },
+  {
+    link: "Board Members",
+    path: "/boardmembers",
+  },
+ 
   {
     link: "CONTACT US",
     path: "/contactus",

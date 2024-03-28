@@ -1,46 +1,47 @@
 // import React from 'react'
 import Header from "../Header";
-import bgimg1 from "../../assets/bg5.jpeg";
+// import bgimg1 from "../../assets/bg5.jpeg";
 import Footer from "../Footer";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { boardmembers } from "./boardmembersdata";
 import MediumNavBar from "../MediumNavBar";
+// import "./boardmembers.css"
 
 const BoardMembers = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     if (scrollTop > 100) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-  const backgroundImage = `url(${bgimg1})`;
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+  // const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid bg-slate-100">
-      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+      <div className="w-full block md:hidden h-80"
+      //  style={{ backgroundImage }}
+       >
         <MediumNavBar />
       </div>
 
       <div className="mb-20 ">
         <div
-          className=" hidden md:block h-[35rem]  bg-cover"
-          style={{ backgroundImage }}
+          className=" hidden md:block h-[35rem]  bg-cover boardmembersbgimg"
+          // style={{ backgroundImage }}
         >
           <div
-            className={`w-full  shadow-md ${
-              isScrolled ? "fixed z-10 bg-white" : ""
-            }`}
+            className={`w-full  shadow-md`}
           >
             <Header />
           </div>
@@ -55,7 +56,7 @@ const BoardMembers = () => {
         </div>
       </div>
       <div className="text-2xl mt-20 mb-10 font-medium flex justify-center md:text-4xl">
-        <h1 className="">Meet Board Council</h1>
+        <h1 className=""> Governing Board</h1>
       </div>
       <div className="px-8 mt-5 md:mt-20 mb-48 grid md:grid-cols-3 md:px-52 gap-10">
         {boardmembers.map((members, index) => (

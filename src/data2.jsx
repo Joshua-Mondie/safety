@@ -83,7 +83,7 @@ export const individualMembership = [
           "Granted to persons who are not safety practitioners but have contributed remarkably towards the advancement of safety in Nigeria. This is awarded based on nomination.",
       },
       {
-        text1: "Life member (LISPN):",
+        text1: "Life member (LM):",
         text2:
           "Granted to highly deserving Fellows based on their contributions to safety profession and the Institute.",
       },

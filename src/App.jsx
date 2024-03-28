@@ -1,3 +1,5 @@
+/** @format */
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import NyscProgramme from "./pages/NyscProgramme";
@@ -21,67 +23,67 @@ import MembershipFee from "./pages/membership/membershipfee/MembershipFee";
 import Events from "./pages/eventpage/Events";
 
 const App = () => {
-  return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/nyscprogramme" element={<NyscProgramme />}></Route>
-          <Route path="/branches" element={<BranchesPage />}></Route>
-          <Route path="/history" element={<History />}></Route>
-          <Route path="/aboutus" element={<AboutPages />}></Route>
-          <Route path="/contactus" element={<ContactUs />}></Route>
-          <Route
-            path="/training&certification"
-            element={<TrainingAndCertification />}
-          ></Route>
-          <Route
-            path="/individualmembership"
-            element={<IndividualMembership />}
-          ></Route>
-          <Route
-            path="/coporatemembership"
-            element={<CoporateMembership />}
-          ></Route>
-          <Route
-            path="/imostatebranchschedule"
-            element={<ImoStateBranch />}
-          ></Route>
-          <Route
-            path="/kwarastatebranchschedule"
-            element={<KwaraStateBranch />}
-          ></Route>
-          <Route
-            path="/crossriverstatebranchschedule"
-            element={<CrossRiverStateBranch />}
-          ></Route>
-          <Route
-            path="/oyostatebranchschedule"
-            element={<OyoStateBranch />}
-          ></Route>
-          <Route
-            path="/lagosstatebranchschedule"
-            element={<LagosState />}
-          ></Route>
-          <Route
-            path="/divisionsandspecialization"
-            element={<DivisionsAndSpecialization />}
-          ></Route>
-          <Route
-            path="/disciplinarycommitee"
-            element={<DisciplinaryCommitee />}
-          ></Route>
-          <Route
-            path="/objectivesandfunctions"
-            element={<ObjectivesAndFunctions />}
-          ></Route>
-          <Route path="/boardmembers" element={<BoardMembers />}></Route>
-          <Route path="/membershipfees" element={<MembershipFee />}></Route>
-          <Route path="/events" element={<Events />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+	return (
+		<div>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<HomePage />}></Route>
+					<Route path="/nyscprogramme" element={<NyscProgramme />}></Route>
+					<Route path="/branches" element={<BranchesPage />}></Route>
+					<Route path="/history" element={<History />}></Route>
+					<Route path="/aboutus" element={<AboutPages />}></Route>
+					<Route path="/contactus" element={<ContactUs />}></Route>
+					<Route
+						path="/training&certification"
+						element={<TrainingAndCertification />}
+					></Route>
+					<Route
+						path="/individualmembership"
+						element={<IndividualMembership />}
+					></Route>
+					<Route
+						path="/coporatemembership"
+						element={<CoporateMembership />}
+					></Route>
+					<Route
+						path="/imostatebranchschedule"
+						element={<ImoStateBranch />}
+					></Route>
+					<Route
+						path="/kwarastatebranchschedule"
+						element={<KwaraStateBranch />}
+					></Route>
+					<Route
+						path="/crossriverstatebranchschedule"
+						element={<CrossRiverStateBranch />}
+					></Route>
+					<Route
+						path="/oyostatebranchschedule"
+						element={<OyoStateBranch />}
+					></Route>
+					<Route
+						path="/lagosstatebranchschedule"
+						element={<LagosState />}
+					></Route>
+					<Route
+						path="/divisionsandspecialization"
+						element={<DivisionsAndSpecialization />}
+					></Route>
+					<Route
+						path="/disciplinarycommitee"
+						element={<DisciplinaryCommitee />}
+					></Route>
+					<Route
+						path="/objectivesandfunctions"
+						element={<ObjectivesAndFunctions />}
+					></Route>
+					<Route path="/boardmembers" element={<BoardMembers />}></Route>
+					<Route path="/membershipfees" element={<MembershipFee />}></Route>
+					<Route path="/events" element={<Events />}></Route>
+				</Routes>
+			</BrowserRouter>
+		</div>
+	);
 };
 
 export default App;

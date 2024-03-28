@@ -69,7 +69,7 @@ const IndividualMembership = () => {
         </div>
       </div>
       <div className=" mt-10 mb-52 px-10">
-        <div className=" flex justify-center relative border ">
+        <div className=" flex justify-center relative ">
           <div className="w-full lg:mx-72 font-custom  text-justify text-gray-700 font-normal text-lg">
             <span className="md:absolute md:left-[16rem] top-[-0.5rem] text-4xl text-gray-200">
               <RiDoubleQuotesL />

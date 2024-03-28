@@ -1,5 +1,5 @@
 // import React from 'react'
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Header from "./Header";
 import bgimg1 from "../assets/objectivesbg.png";
 import Footer from "./Footer";
@@ -7,24 +7,24 @@ import { instituteFunctions } from "../data2";
 import MediumNavBar from "./MediumNavBar";
 
 const ObjectivesAndFunctions = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     if (scrollTop > 100) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid">
@@ -35,9 +35,7 @@ const ObjectivesAndFunctions = () => {
       <div className="mb-20 hidden md:block">
         <div className=" h-[35rem]  bg-contain bg-no-repeat" style={{ backgroundImage }}>
           <div
-            className={`w-full  shadow-md ${
-              isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
-            }`}
+            className={`w-full  shadow-md`}
           >
             <Header />
           </div>

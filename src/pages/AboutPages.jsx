@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import bgimg1 from "../assets/aboutbg.jpeg";
 import pic1 from "../assets/pic1.png";
 
@@ -8,24 +8,24 @@ import Footer from "./Footer";
 import MediumNavBar from "./MediumNavBar";
 
 const AboutPages = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     if (scrollTop > 100) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const backgroundImage = `url(${bgimg1})`;
   return (
@@ -40,9 +40,7 @@ const AboutPages = () => {
           style={{ backgroundImage }}
         >
           <div
-            className={`w-full  shadow-md ${
-              isScrolled ? "fixed top-[-3rem] z-10 " : ""
-            }`}
+            className={`w-full  shadow-md `}
           >
             <Header />
           </div>

@@ -1,4 +1,4 @@
-import event1 from "../../assets/event1.jpg";
+// import event1 from "../../assets/event1.jpg";
 import event2 from "../../assets/event2.jpg";
 import event3 from "../../assets/event3.jpg";
 import event4 from "../../assets/event4.jpg";
@@ -16,9 +16,7 @@ import event15 from "../../assets/event15.jpg";
 import event16 from "../../assets/event16.jpg";
 
 export const event = [
-  {
-    img: event1,
-  },
+  
   {
     img: event2,
   },
