@@ -1,7 +1,7 @@
 // import { useState, useEffect } from "react";
 // import { names } from "../data";
 import Header from "./Header";
-import bgimg1 from "../assets/branchesbg.png";
+// import bgimg1 from "../assets/branchesbg.png";
 // import {RiArrowDropDownLine, RiArrowDropUpLine} from "react-icons/ri"
 import "./pages.css";
 import Footer from "./Footer";
@@ -41,17 +41,19 @@ const BranchesPage = () => {
   //   };
   // }, []);
 
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
 
   return (
     <div className="grid">
-      <div className="w-full block md:hidden h-80"
-       style={{ backgroundImage }}
+      <div className="w-full block md:hidden h-80 branchesbg"
+      //  style={{ backgroundImage }}
        >
         <MediumNavBar />
       </div>
       <div className="mb-20">
-        <div className="md:block hidden h-[35rem]  bg-cover" style={{ backgroundImage }}>
+        <div className="md:block hidden h-[30rem]  bg-cover branchesbg"
+        //  style={{ backgroundImage }}
+         >
           <div
             className={`w-full  shadow-md `}
           >

@@ -4,98 +4,141 @@
 @tailwind components;
 @tailwind utilities;
 
-.boardmembersbgimg {
-	
-	background-image: linear-gradient(#ffffff00, #ffffff00),
-		url("/src/assets/bg5.jpeg");
-	background-attachment: fixed;
+.boardmembersbg {
+  background-image: linear-gradient(#ffffff13, #868383),
+    url("/src/assets/boardmembersbg.jpeg");
+  background-attachment: fixed;
 
-	
-	background-size: cover; /* Cover the entire container */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-position: center; /* Center the image horizontally and vertically */
-	
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
 }
 
 .crossriversstatebranchbg {
-	
-	background-image: linear-gradient(#ffffff00, #ffffff00),
-		url("/src/assets/crossriverstatebranchC.png");
-	background-attachment: fixed;
+  background-image: linear-gradient(#ffffff00, #ffffff00),
+    url("/src/assets/crossriverstatebranchC.png");
+  background-attachment: fixed;
 
-	
-	background-size: cover; /* Cover the entire container */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-position: center; /* Center the image horizontally and vertically */
-	
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
 }
 
+.aboutbg {
+  background-image: linear-gradient(#ffffff00, #ffffff00),
+    url("/src/assets/event2.jpg");
+  background-attachment: fixed;
 
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.homebg {
+  background-image: linear-gradient(#57575772, #ffffff3e),
+    url("/src/assets/homebg.jpeg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.nyscbg {
+  background-image: linear-gradient(#ffffff13, #777676),
+    url("/src/assets/one.jpg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.eventsbg {
+  background-image: linear-gradient(#ffffff13, #777676),
+    url("/src/assets/eventsbg.jpeg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.branchesbg {
+  background-image: linear-gradient(#ffffff13, #777676),
+    url("/src/assets/branchesbg.jpeg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+.individualmembershipbg {
+  background-image: linear-gradient(#ffffff13, #777676),
+    url("/src/assets/event3.jpg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}
+
+.coporatemembershipbg {
+  background-image: linear-gradient(#afacac4d, #777676),
+    url("/src/assets/pic5.png");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}
+
+.membershipfeesbg {
+  background-image: linear-gradient(#afacac4d, #959494),
+    url("/src/assets/membershipfeesbg.jpeg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}
+
+.objandfuncbg {
+  background-image: linear-gradient(#afacac4d, #959494),
+    url("/src/assets/img.jpeg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}
+.disciplinarybg {
+  background-image: linear-gradient(#afacac4d, #959494),
+    url("/src/assets/whatappimg.jpeg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}
+
+.divisionsbg {
+  background-image: linear-gradient(#b2afaf4d, #a9a6a6),
+    url("/src/assets/bg2.jpg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}
+
+.contactusbg {
+  background-image: 
+    url("/src/assets/contactimg5.avif");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}

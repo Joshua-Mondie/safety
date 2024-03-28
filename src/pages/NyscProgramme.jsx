@@ -1,28 +1,12 @@
 // import { useState, useEffect } from "react";
 import Header from "./Header";
-import bgimg1 from "../assets/nyscbg.png";
+// import bgimg1 from "../assets/nyscbg.png";
 import Footer from "./Footer";
 import MediumNavBar from "./MediumNavBar";
 
 const NyscProgramme = () => {
   // const [isScrolled, setIsScrolled] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop = window.scrollY;
-  //     if (scrollTop > 100) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   const objectives = [
     {
@@ -125,16 +109,20 @@ const NyscProgramme = () => {
     },
   ];
 
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
 
   return (
     <div className="md:grid ">
-      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+      <div className="w-full block md:hidden h-80 nyscbg" 
+      // style={{ backgroundImage }}
+      >
         <MediumNavBar />
       </div>
 
       <div className="mb-20 hidden md:block">
-        <div className=" h-[35rem]  bg-cover" style={{ backgroundImage }}>
+        <div className=" h-[30rem]  bg-cover nyscbg"
+        //  style={{ backgroundImage }}
+         >
           <div
             className={`w-full  shadow-md `}
           >
@@ -146,13 +134,13 @@ const NyscProgramme = () => {
             <p className="mt-32 font-custom text-5xl text-white font-bold">
               NYSC PROGRAMME
             </p>
-            <p className="text-white ml-20 text-lg">Home / NYSC Programme</p>
+            <p className="text-white ml-24 mt-4 text-lg font-semibold">Home / NYSC Programme</p>
           </div>
         </div>
       </div>
 
       {/* <div className="w-[1361px] mx-auto border mt-8 h-[60rem] flex justify-center"> */}
-      <div className=" md:mb-[50rem] mt-32 px-8 grid  md:px-0  mb-[90rem]">
+      <div className=" md:mb-[50rem] mt-1 px-8 grid  md:px-0  mb-[90rem]">
         <h1 className="text-2xl text-black font-custom md:text-4xl font-bold mb-10  w-full  flex justify-center">
           Program Overview
         </h1>
@@ -182,7 +170,7 @@ const NyscProgramme = () => {
           // style={{ backgroundImage }}
         >
           <div className="mb-80 ">
-            <h1 className=" text-2xl text-black  text-center font-custom md:text-4xl font-bold md:ml-36 mb-10">
+            <h1 className=" text-2xl text-black  text-center font-custom md:text-4xl font-bold md:ml-10 mb-10">
               Programme Objectives
             </h1>
             <div className="grid md:grid-cols-3 md:gap-6   font-custom font-bold md:w-[50rem] ">

@@ -1,6 +1,6 @@
 // import React from 'react'
 import Header from "./Header";
-import bgimg1 from "../assets/contactimg5.avif";
+// import bgimg1 from "../assets/contactimg5.avif";
 // import { useState, useEffect } from "react";
 import { MdLocationOn } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
@@ -27,11 +27,13 @@ const ContactUs = () => {
   //   };
   // }, []);
 
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid">
       <div className="mb-20">
-        <div className=" h-[35rem]   bg-cover" style={{ backgroundImage }}>
+        <div className=" h-[30rem]   bg-cover contactusbg"
+        //  style={{ backgroundImage }}
+         >
           <div
             className={`w-full  shadow-md`}
           >

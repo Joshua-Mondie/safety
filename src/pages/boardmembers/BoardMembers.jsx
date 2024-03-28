@@ -29,7 +29,7 @@ const BoardMembers = () => {
   // const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid bg-slate-100">
-      <div className="w-full block md:hidden h-80"
+      <div className="w-full block md:hidden h-80 boardmembersbg"
       //  style={{ backgroundImage }}
        >
         <MediumNavBar />
@@ -37,7 +37,7 @@ const BoardMembers = () => {
 
       <div className="mb-20 ">
         <div
-          className=" hidden md:block h-[35rem]  bg-cover boardmembersbgimg"
+          className=" hidden md:block h-[30rem]  bg-cover boardmembersbg"
           // style={{ backgroundImage }}
         >
           <div

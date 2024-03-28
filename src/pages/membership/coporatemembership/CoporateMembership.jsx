@@ -1,6 +1,6 @@
 // import React from 'react'
 import Header from "../../Header";
-import bgimg1 from "../../../assets/trainingbg2.jpeg";
+// import bgimg1 from "../../../assets/trainingbg2.jpeg";
 import { RiDoubleQuotesR, RiDoubleQuotesL } from "react-icons/ri";
 
 // import { useState, useEffect } from "react";
@@ -29,14 +29,16 @@ const CoporateMembership = () => {
   //   };
   // }, []);
 
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
 
   //   const backgroundImageTwo = `url(${bgimg2})`;
 
   return (
     <div className="grid">
       <div className="mb-20">
-        <div className=" h-[35rem]   bg-cover" style={{ backgroundImage }}>
+        <div className=" h-[30rem]   bg-cover coporatemembershipbg"
+        //  style={{ backgroundImage }}
+         >
           <div
             className={`w-full  shadow-md  `}
           >

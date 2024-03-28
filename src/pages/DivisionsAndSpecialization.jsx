@@ -2,7 +2,7 @@
 // import { useState, useEffect } from "react";
 // import { names } from "../data";
 import Header from "./Header";
-import bgimg1 from "../assets/bg5.jpeg";
+// import bgimg1 from "../assets/bg5.jpeg";
 import "./pages.css";
 import Footer from "./Footer";
 // import { Link } from "react-router-dom";
@@ -30,17 +30,19 @@ const DivisionsAndSpecialization = () => {
   //   };
   // }, []);
 
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid">
       <div className="mb-20">
-      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+      <div className="w-full block md:hidden h-80 divisionsbg"
+      //  style={{ backgroundImage }}
+       >
         <MediumNavBar />
       </div>
 
         <div
-          className="hidden md:block h-[35rem]  bg-cover"
-          style={{ backgroundImage }}
+          className="hidden md:block h-[30rem]  bg-cover divisionsbg"
+          // style={{ backgroundImage }}
         >
           <div
             className={`w-full  shadow-md `}
@@ -68,7 +70,7 @@ const DivisionsAndSpecialization = () => {
             </p>
           </div>
         ))}
-        ffffff
+        
       </div>
       <Footer />
     </div>

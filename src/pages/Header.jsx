@@ -36,7 +36,7 @@ const Header = () => {
 					</span>
 				</div> */}
 
-				<div className="hidden shadow-lg h-[7rem] md:flex gap-10  bg-white py-2  sticky">
+				<div className="hidden shadow-lg h-[6rem] md:flex gap-10  bg-white py-2  sticky">
 					<div className=" w-[12%]  ">
 						<img src={safetylogo} alt="" className="h-[100%] w-[100%] py-2" />
 					</div>

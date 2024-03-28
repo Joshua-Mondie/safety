@@ -1,7 +1,7 @@
 // import React from 'react'
 // import { useState, useEffect } from "react";
 import Header from "./Header";
-import bgimg1 from "../assets/objectivesbg.png";
+// import bgimg1 from "../assets/objectivesbg.png";
 import Footer from "./Footer";
 import { instituteFunctions } from "../data2";
 import MediumNavBar from "./MediumNavBar";
@@ -25,15 +25,19 @@ const ObjectivesAndFunctions = () => {
   //     window.removeEventListener("scroll", handleScroll);
   //   };
   // }, []);
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid">
-      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+      <div className="w-full block md:hidden h-80 objandfuncbg"
+      //  style={{ backgroundImage }}
+       >
         <MediumNavBar />
       </div>
 
       <div className="mb-20 hidden md:block">
-        <div className=" h-[35rem]  bg-contain bg-no-repeat" style={{ backgroundImage }}>
+        <div className=" h-[30rem]  bg-contain bg-no-repeat objandfuncbg"
+        //  style={{ backgroundImage }}
+         >
           <div
             className={`w-full  shadow-md`}
           >

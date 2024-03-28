@@ -1,9 +1,9 @@
 // import React from 'react'
 import Header from "../Header";
-import bgimg1 from "../../assets/trainingbg2.jpeg";
+// import bgimg1 from "../../assets/trainingbg2.jpeg";
 import { RiDoubleQuotesR, RiDoubleQuotesL } from "react-icons/ri";
 
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { SlBookOpen } from "react-icons/sl";
 import {
   individualMembership,
@@ -13,43 +13,43 @@ import Footer from "../Footer";
 import MediumNavBar from "../MediumNavBar";
 
 const IndividualMembership = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     if (scrollTop > 100) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
 
   //   const backgroundImageTwo = `url(${bgimg2})`;
 
   return (
     <div className="grid">
-      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+      <div className="w-full block md:hidden h-80 individualmembershipbg"
+      //  style={{ backgroundImage }}
+       >
         <MediumNavBar />
       </div>
       <div className="mb-20">
         <div
-          className="hidden md:block h-[35rem]   bg-cover"
-          style={{ backgroundImage }}
+          className="hidden md:block h-[30rem]   bg-cover individualmembershipbg"
+          // style={{ backgroundImage }}
         >
           <div
-            className={`w-full  shadow-md  ${
-              isScrolled ? "fixed top-[-3rem] z-10 bg-white" : ""
-            }`}
+            className={`w-full  shadow-md  `}
           >
             {/* <div className=" absolute h-full w-full bg-gray-400 opacity-45 flex items-center text-white font-semibold text-lg">
               hello

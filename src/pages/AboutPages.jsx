@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-import bgimg1 from "../assets/aboutbg.jpeg";
+// import bgimg1 from "../assets/aboutbg.jpeg";
 import pic1 from "../assets/pic1.png";
 
 import Header from "./Header";
@@ -27,17 +27,19 @@ const AboutPages = () => {
   //   };
   // }, []);
 
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid">
-      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+      <div className="w-full block md:hidden h-80 aboutbg" 
+      // style={{ backgroundImage }}
+      >
         <MediumNavBar />
       </div>
 
       <div className="mb-20 hidden md:block">
         <div
-          className=" h-[35rem]  bg-cover bg-no-repeat about"
-          style={{ backgroundImage }}
+          className=" h-[30rem]  bg-cover bg-no-repeat aboutbg"
+          // style={{ backgroundImage }}
         >
           <div
             className={`w-full  shadow-md `}

@@ -1,13 +1,13 @@
 // import React from 'react'
 // import { useState, useEffect } from "react";
 import Header from "../Header";
-import bgimg1 from "../../assets/eventsbg.png";
+// import bgimg1 from "../../assets/eventsbg.png";
 import Footer from "../Footer";
 import { event } from "./event";
 import MediumNavBar from "../MediumNavBar";
 
 const Events = () => {
-  const backgroundImage = `url(${bgimg1})`;
+  // const backgroundImage = `url(${bgimg1})`;
   // const [isScrolled, setIsScrolled] = useState(false);
 
   // useEffect(() => {
@@ -28,11 +28,15 @@ const Events = () => {
   // }, []);
   return (
     <div className="md:grid w-full">
-      <div className="w-full block md:hidden h-80" style={{ backgroundImage }}>
+      <div className="w-full block md:hidden h-80 eventsbg"
+      //  style={{ backgroundImage }}
+       >
         <MediumNavBar />
       </div>
       <div className="mb-20">
-        <div className="hidden md:block h-[35rem]  bg-cover" style={{ backgroundImage }}>
+        <div className="hidden md:block h-[30rem]  bg-cover eventsbg" 
+        // style={{ backgroundImage }}
+        >
           <div
             className={`w-full  shadow-md`}
           >

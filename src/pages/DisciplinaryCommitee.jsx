@@ -27,14 +27,14 @@ const DisciplinaryCommitee = () => {
   // }, []);
   return (
     <div className="grid ">
-      <div className="w-full block md:hidden h-80" 
+      <div className="w-full block md:hidden h-80 disciplinarybg" 
       // style={{ backgroundImage }}
       >
         <MediumNavBar />
       </div>
 
       <div className="hidden md:block">
-        <div className=" h-[35rem]  bg-cover" 
+        <div className=" h-[30rem]  bg-cover disciplinarybg" 
         // style={{ backgroundImage }}
         >
           <div
@@ -54,7 +54,7 @@ const DisciplinaryCommitee = () => {
           </div>
         </div>
       </div>
-      <div className="mt-40 mb-32  border">
+      <div className="mt-40 mb-32  ">
         <div className="text-2xl md:text-4xl flex justify-center mb-20">
           The Disciplinary Rules
         </div>
