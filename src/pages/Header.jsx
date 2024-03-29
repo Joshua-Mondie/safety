@@ -44,14 +44,14 @@ const Header = () => {
 						{navLinks.map((links, index) => (
 							<div
 								key={index}
-								className={`group duration-500 transition ease-in-out     items-center flex   font-custom ${
+								className={`group duration-500 transition tab ease-in-out     items-center flex   font-custom ${
 									index === navLinks.length - 1
 										? "rounded-full text-sm h-8 py-6 px-6 bg-green-500 text-white  hover:bg-slate-700 absolute -right-10"
-										: "hover:text-green-500   h-28" // Add your other class names here if needed
+										: "hover:text-green-500    h-28" // Add your other class names here if needed
 								}`}
 							>
-								<span className="font-custom font-bold flex items-center gap-1 ">
-									<Link to={links.path} className="active:text-green-500">
+								<span className="font-custom  flex items-center gap-1 ">
+									<Link to={links.path} className={` tab`}>
 										{links.link}
 									</Link>
 									<span className="mt-1 text-base">{links.icon}</span>

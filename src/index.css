@@ -142,3 +142,25 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: center; /* Center the image horizontally and vertically */
 }
+
+.pastpresidentbg {
+  background-image: linear-gradient(#b2afaf4d, #a9a6a6),
+    url("/src/assets/event16.jpg");
+  background-attachment: fixed;
+
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image horizontally and vertically */
+}
+
+
+.tab{
+ font-weight: 700;
+}
+
+
+.tab:active {
+  /* color: red; */
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));;
+}

@@ -5,6 +5,8 @@ import Footer from "../Footer";
 // import { useState, useEffect } from "react";
 import { boardmembers } from "./boardmembersdata";
 import MediumNavBar from "../MediumNavBar";
+import memberOne from "../../assets/boardmember1.png";
+
 // import "./boardmembers.css"
 
 const BoardMembers = () => {
@@ -29,9 +31,10 @@ const BoardMembers = () => {
   // const backgroundImage = `url(${bgimg1})`;
   return (
     <div className="grid bg-slate-100">
-      <div className="w-full block md:hidden h-80 boardmembersbg"
-      //  style={{ backgroundImage }}
-       >
+      <div
+        className="w-full block md:hidden h-80 boardmembersbg"
+        //  style={{ backgroundImage }}
+      >
         <MediumNavBar />
       </div>
 
@@ -40,9 +43,7 @@ const BoardMembers = () => {
           className=" hidden md:block h-[30rem]  bg-cover boardmembersbg"
           // style={{ backgroundImage }}
         >
-          <div
-            className={`w-full  shadow-md`}
-          >
+          <div className={`w-full  shadow-md`}>
             <Header />
           </div>
         </div>
@@ -57,6 +58,17 @@ const BoardMembers = () => {
       </div>
       <div className="text-2xl mt-20 mb-10 font-medium flex justify-center md:text-4xl">
         <h1 className=""> Governing Board</h1>
+      </div>
+      <div className=" flex justify-center">
+        <div className="w-64 shadow bg-white md:w-[19rem]">
+          <img src={memberOne} alt="" className="w-full" />
+          <div className="pt-6 pb-12 px-10 border">
+            <h1 className=" text-lg font-custom ">EVARISTUS UZAMERE</h1>
+            <h1 className="md:mx-28  text-xs md:text-sm font-custom text-green-500 mx-4 md:-ml-[20px]  md:absolute">
+              PRESIDENT, CHAIRMAN OF THE BOARD
+            </h1>
+          </div>
+        </div>
       </div>
       <div className="px-8 mt-5 md:mt-20 mb-48 grid md:grid-cols-3 md:px-52 gap-10">
         {boardmembers.map((members, index) => (

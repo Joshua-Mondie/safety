@@ -21,6 +21,7 @@ import ObjectivesAndFunctions from "./pages/ObjectivesAndFunctions";
 import BoardMembers from "./pages/boardmembers/BoardMembers";
 import MembershipFee from "./pages/membership/membershipfee/MembershipFee";
 import Events from "./pages/eventpage/Events";
+import PastPresident from "./pages/PastPresident";
 
 const App = () => {
 	return (
@@ -33,6 +34,7 @@ const App = () => {
 					<Route path="/history" element={<History />}></Route>
 					<Route path="/aboutus" element={<AboutPages />}></Route>
 					<Route path="/contactus" element={<ContactUs />}></Route>
+					<Route path="/pastpresidents" element={<PastPresident/>}></Route>
 					<Route
 						path="/training&certification"
 						element={<TrainingAndCertification />}
