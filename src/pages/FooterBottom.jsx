@@ -6,7 +6,7 @@ const FooterBottom = () => {
   return (
     <div className="border mx-4 md:mx-0  border-black font-custom">
       <div className="mt-80 h-3/4 md:mt-20 w-full text-gray-300 md:flex items-center justify-around">
-        <div className=" bg-gray-800  md:mt-20 px-4 md:p-0 grid grid-cols-1 gap-y-5 ">
+        <div className="  md:mt-20 px-4 md:p-0 grid grid-cols-1 gap-y-5 ">
           <span className="flex gap-4  hover:text-white">
             <span className="text-green-500 mt-1 text-2xl ">
               <MdLocationOn />
