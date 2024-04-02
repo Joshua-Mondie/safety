@@ -53,7 +53,7 @@ const HomePage = () => {
   // const backgroundImage = `url(${bgimg2})`;
 
   return (
-    <div className=" bg-gray-50">
+    <div className=" bg-gray-50 w-full ">
       <div
         className="w-full block md:hidden h-80 homebg"
         //  style={{ backgroundImage }}
@@ -61,19 +61,21 @@ const HomePage = () => {
         <MediumNavBar />
       </div>
       <div className="md:relative pb-44 bg-gray-100 md:block">
-        <div className="h-[35rem] w-full bg-cover bg-no-repeat homebg">
+        <div className="h-4 lg:h-[35rem] md:h-[25rem] w-full bg-cover bg-no-repeat homebg">
           <div className="w-full shadow-md">
             <Header />
           </div>
 
           {/* <div className="mt-40">Ispon</div> */}
         </div>
-		<div className="flex  justify-center -mt-[26rem] mb-40  z-0">
+        <div className="flex  justify-center -mt-[15rem] lg:-mt-[26rem] mb-40  z-0">
           <div>
-            <p className="mt-16 font-custom text-7xl text-center text-white font-bold">
+            <p className="mt-16 text-lg  font-custom lg:text-7xl text-center text-white font-bold">
               Institute Of Safety Professionals <br /> Of Nigeria
             </p>
-            <p className="text-white ml-6 mt-5 text-lg justify-center font-semibold flex">Home / About Us</p>
+            <p className="text-white  lg:ml-6 mt-5 lg:text-lg text-sm justify-center font-semibold flex">
+              Home / About Us
+            </p>
           </div>
         </div>
         <div className="block md:absolute w-full h-20 bg-gray-100">

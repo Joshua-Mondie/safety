@@ -1,5 +1,4 @@
-// import { useState, useEffect } from "react";
-// import bgimg1 from "../assets/aboutbg.jpeg";
+
 import pic1 from "../assets/pic1.png";
 
 import Header from "./Header";
@@ -8,38 +7,19 @@ import Footer from "./Footer";
 import MediumNavBar from "./MediumNavBar";
 
 const AboutPages = () => {
-  // const [isScrolled, setIsScrolled] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop = window.scrollY;
-  //     if (scrollTop > 100) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
-  // const backgroundImage = `url(${bgimg1})`;
+  
   return (
     <div className="grid">
       <div className="w-full block md:hidden h-80 aboutbg" 
-      // style={{ backgroundImage }}
+      
       >
         <MediumNavBar />
       </div>
 
       <div className="mb-20 hidden md:block">
         <div
-          className=" h-[30rem]  bg-cover bg-no-repeat aboutbg"
-          // style={{ backgroundImage }}
+          className=" lg:h-[30rem] md:h-[20rem] h-4  bg-cover bg-no-repeat aboutbg"
+         
         >
           <div
             className={`w-full  shadow-md `}
