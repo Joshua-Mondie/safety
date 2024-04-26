@@ -59,10 +59,10 @@ const IndividualMembership = () => {
         </div>
         <div className="flex  justify-center -mt-[24rem] mb-40  z-0">
           <div>
-            <p className="mt-32 font-custom text-6xl text-white font-bold">
+            <p className="mt-52 ml-4 md:mt-32 font-custom  text-3xl md:text-6xl text-white font-bold">
               Individual Membership
             </p>
-            <p className="text-white ml-48 mt-5 text-lg">
+            <p className="text-white ml-10 md:ml-48 mt-5 text-lg">
               Home / Individual Membership
             </p>
           </div>
