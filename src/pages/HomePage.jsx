@@ -53,14 +53,14 @@ const HomePage = () => {
   // const backgroundImage = `url(${bgimg2})`;
 
   return (
-    <div className=" bg-gray-50 w-full ">
+    <div className=" bg-gray-50 w-full border border-red-700 ">
       <div
         className="w-full block md:hidden h-80 homebg"
         //  style={{ backgroundImage }}
       >
         <MediumNavBar />
       </div>
-      <div className="md:relative pb-44 bg-gray-100 md:block">
+      <div className="md:relative pb-44 bg-gray-100  md:block">
         <div className="h-4 lg:h-[35rem] md:h-[25rem] w-full bg-cover bg-no-repeat homebg">
           <div className="w-full shadow-md">
             <Header />
@@ -164,7 +164,7 @@ const HomePage = () => {
 
       </div> */}
       {
-        <div className=" mt-48 bg-gray-100 ">
+        <div className=" mt-48 bg-gray-100 w-full border border-red-500 ">
           <Footer />
         </div>
       }
