@@ -10,7 +10,7 @@ const MediumNavBar = () => {
     isOpen(!open);
   };
   return (
-    <div className="px-4   justify-center flex border md:hidden w-full h  top-0 h-24 fixed container z-20  bg-white">
+    <div className="px-4   justify-center flex  md:hidden w-full border  h  top-0 h-24 fixed container z-20  bg-white">
       <div className="flex   w-full items-center justify-between">
         <img src={safetylogo} alt="" className="h-14" />
         <span className="text-4xl" onClick={btn}>
@@ -18,7 +18,7 @@ const MediumNavBar = () => {
         </span>
       </div>
       {open && (
-        <div className="absolute border px-12 mt-[5.9rem] w-52  left-0 h-[38rem] overflow-y-scroll md:flex gap-10  bg-white pb-10 ">
+        <div className="absolute border px-12 mt-[5.9rem] w-full  left-0 h-[38rem] overflow-y-scroll md:flex gap-10  bg-white pb-10 ">
           {/* <div className=" w-[12%]  ">
             <img src={safetylogo} alt="" className="h-[100%] w-[100%] py-2" />
           </div> */}
@@ -26,25 +26,23 @@ const MediumNavBar = () => {
             {navLinks.map((links, index) => (
               <div
                 key={index}
-                className={`group duration-500 transition ease-in-out     items-center flex   font-custom ${
+                className={`text-red-500 group duration-500 transition ease-in-out     items-center   font-custom ${
                   index === navLinks.length - 1
                     ? "font-custom  font-bold text-base mt-6 flex items-center gap-1 "
                     : "hover:text-green-500   h-28" // Add your other class names here if needed
                 }`}
               >
-                <span className="font-custom  font-bold flex items-center gap-1 ">
-                  <Link to={links.path} className="active:text-green-500">
+                <div className="font-custom  font-bold  ">
+                  <Link to={links.path} className="active:text-green-500 flex items-center gap-1">
                     {links.link}
-                  </Link>
                   <span className="mt-1 text-base">{links.icon}</span>
-                </span>
-
+                  </Link>
                 {links.submenmu && (
                   <div
                     className={`block  ${
                       index === navLinks.length - 2
-                        ? " w-[20rem]  z-50 text-black  mt-[22.2rem] pt-4 -ml-40 hidden bg-white group-hover:block shadow-lg"
-                        : "  z-50 shadow-lg  w-[9rem] pt-4 transition text-black mt-[42.6rem]   -ml-5 hidden bg-white    group-hover:block "
+                        ? " w-[20rem] border text-red-500  z-50 text-lack  pt-4 -ml-40  bg-white group-hover:block shadow-lg"
+                        : " z-50 shadow-lg  w-[9rem] pt-4 transition text-black    -ml-5 hidden bg-white    group-hover:block "
                     }`}
                   >
                     {links.children.map((child, childIndex) => (
@@ -57,6 +55,8 @@ const MediumNavBar = () => {
                     ))}
                   </div>
                 )}
+                </div>
+
               </div>
             ))}
           </div>
