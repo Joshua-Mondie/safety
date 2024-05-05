@@ -25,10 +25,10 @@ const MediumNavBar = () => {
           <MdMenu />
         </Navbar.Toggle>
       </div>
-      <Navbar.Collapse className={open ? "show w-full  bg-white mt-3 h-[25rem] overflow-y-scroll" : ""}>
+      <Navbar.Collapse className={open ? "show w-full  mt-3 h-[25rem] overflow-y-scroll" : ""}>
         <Nav className="mr-auto  h-full">
           {navLinks.map((link, index) => (
-            <div key={index} className="h-full">
+            <div key={index} className="h-full bg-white ">
               {link.children ? (
                 <NavDropdown
                   title={link.link}
