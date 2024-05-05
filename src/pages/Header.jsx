@@ -42,14 +42,14 @@ const Header = () => {
 								<div
 									className={`hidden ${
 										index === navLinks.length - 3
-											? "absolute w-[20rem]  z-50 text-black  mt-[20rem] pt-4 -ml-40 hidden bg-white md:group-hover:block shadow-lg"
-											: "  z-50 shadow-lg absolute w-[20rem] pt-4 transition text-black mt-[40rem]   -ml-5 hidden bg-white    group-hover:block "
+											? "absolute w-[20rem]  z-50 text-black   mt-[24rem] pt-4 -ml-40 hidden bg-white md:group-hover:block shadow-lg"
+											: "  z-50 shadow-lg absolute overflow-y-scroll h-[30rem] w-[20rem] pt-4 transition text-black mt-[34rem]   -ml-5 hidden bg-white    group-hover:block "
 									}`}
 								>
 									{links.children.map((child, childIndex) => (
 										<div
 											key={childIndex}
-											className={`border-b py-4 bg-white px-6 hover:bg-green-500 hover:text-white hover:transform transition hover:delay-100  `}
+											className={`border-b py-4 bg-white px-6 hover:bg-green-500 hover:text-green-500 hover:transform transition hover:delay-100  `}
 										>
 											<Link to={child.route}>{child.title}</Link>
 										</div>
