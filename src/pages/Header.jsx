@@ -12,7 +12,7 @@ import safetylogo from "../assets/safetylogo.jpg.svg";
 const Header = () => {
 	return (
 		<div className=" w-full z-20 fixed  ">
-			<div className="hidden w-full shadow-lg h-[6rem] md:flex gap-10 md:gap-5  bg-white py-2  sticky">
+			<div className="hidden w-full shadow-lg h-[6rem] lg:flex gap-10 md:gap-5  bg-white py-2  sticky">
 				<div className=" w-[12%] md:w-[9%] lg:w-[12%]  ">
 					<img src={safetylogo} alt="" className="h-[100%] w-[100%] py-2" />
 				</div>

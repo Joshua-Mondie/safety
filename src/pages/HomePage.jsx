@@ -60,20 +60,18 @@ const HomePage = () => {
       >
         <MediumNavBar />
       </div>
-      <div className="md:relative pb-44 bg-gray-100  md:block">
+      <div className="md:relative pb-44 bg-gray-100 md:block">
         <div className="h-4 lg:h-[35rem] md:h-[25rem] w-full bg-cover bg-no-repeat homebg">
           <div className="w-full shadow-md">
             <Header />
           </div>
-
-          {/* <div className="mt-40">Ispon</div> */}
         </div>
-        <div className="flex  justify-center -mt-[15rem] lg:-mt-[26rem] mb-40  z-0">
-          <div>
-            <p className="mt-16 text-lg  font-custom lg:text-7xl text-center text-white font-bold">
+        <div className="flex justify-center -mt-[15rem] lg:-mt-[26rem] mb-40 z-0">
+          <div className="text-center">
+            <p className="mt-16 text-lg lg:text-7xl text-center text-white font-bold">
               Institute Of Safety Professionals <br /> Of Nigeria
             </p>
-            <p className="text-white  lg:ml-6 mt-5 lg:text-lg text-sm justify-center font-semibold flex">
+            <p className="text-white mt-5 lg:text-lg text-sm font-semibold">
               Home / About Us
             </p>
           </div>
@@ -99,18 +97,18 @@ const HomePage = () => {
           </div>
         ))}
       </div>
-      <div className="mt-40 mb-2 md:mt-[10rem] mx-2  md:mx-36">
+      <div className="mt-40 mb-2 md:mt-[10rem] mx-2 md:mx-36">
         <div className="md:flex mb-10 items-center justify-between px-1 md:mb-20">
-          <h1 className=" mb-4 text-4xl font-semibold font-custom ">Events</h1>
+          <h1 className="mb-4 text-4xl font-semibold font-custom">Events</h1>
           <button className="font-custom text-green-600 font-semibold">
             View All
           </button>
         </div>
-        <div className="md:flex md:gap-8 grid gap-y-4 w-full">
+        <div className="md:flex md:gap-8 grid gap-y-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {events.map((event, index) => (
             <div
               key={index}
-              className="w-[95vw] h-[60vh] md:h-[50vh] md:w-[50vw] bg-cover relative bg-no-repeat shadow-inner"
+              className="w-full h-[60vh] md:h-[50vh] bg-cover relative bg-no-repeat shadow-inner"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
               style={{ backgroundImage: `url('${event.bgImage}')` }}
@@ -122,7 +120,7 @@ const HomePage = () => {
                     : ""
                 }`}
               >
-                <div className="w-24 py-1 mb-10 md:mb-0 flex  overflow-hidden rounded-full font-custom text-sm text-white justify-center mt-14 ml-12 z-60 bg-green-600">
+                <div className="w-24 py-1 mb-10 md:mb-0 flex overflow-hidden rounded-full font-custom text-sm text-white justify-center mt-14 ml-12 z-60 bg-green-600">
                   Conference
                 </div>
                 <div className="mt-4 md:mt-16 pr-10">

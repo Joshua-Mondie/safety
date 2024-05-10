@@ -1,5 +1,3 @@
-/** @format */
-
 import { useState } from "react";
 import FooterBottom from "./FooterBottom";
 
@@ -21,56 +19,51 @@ const Footer = () => {
   };
 
   return (
-    <div className=" md:h-[80vh]  bg-gray-900 relative w-full">
-      <div className="mx-10 md:mx-0 flex justify-center ">
-        <div className=" px-10   py-10 md:py-0  md:h-[30vh]  bg-green-600 w-full  md:flex justify-center items-center md:gap-10 -mt-28 absolute">
-          <h2 className=" font-semibold lg:text-2xl  text-4xl text-white font-custom mb-5 md:mb-0">
-            Stay Connected
-          </h2>
+    <div className="bg-gray-900 relative py-10">
+      <div className="container mx-auto px-4 md:px-0">
+        <div className="px-4 md:px-10 py-6 md:py-10 md:h-screen-1/3 bg-green-600 w-full md:flex justify-center items-center md:gap-10 md:-mt-4 absolute top-0 left-0 right-0">
+          <div className="text-center md:text-left mb-8 md:mb-0">
+            <h2 className="text-3xl lg:text-5xl text-white font-bold font-custom mb-4 md:mb-2">
+              Stay Connected
+            </h2>
+            <p className="text-white text-base md:text-lg">
+              Get updates on our latest news and events.
+            </p>
+          </div>
           <form
             onSubmit={handleSubmit}
-            className="md:flex  gap-10 max-w-[68rem] items-center justify-center"
+            className="flex flex-col md:flex-row items-center"
           >
-            <div className="mb-8 md:mb-4">
-              {/* <label htmlFor="name" className="block text-sm font-bold mb-2">
-              Name
-            </label> */}
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="md:w-[20rem] lg:w-[10rem] border-b px-4 text-white py-2 focus:outline-none select-none placeholder:text-white  bg-green-600 placeholder-italic"
-                placeholder=" Your Name *"
-                required
-              />
-            </div>
-            <div className="mb-10 md:mb-4">
-              {/* <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
-              Email
-            </label> */}
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="md:w-[20rem] lg:w-[10rem] border-b px-4 text-white py-2 focus:outline-none select-none placeholder:text-white  bg-green-600 placeholder-italic"
-                placeholder="Your Email *"
-                required
-              />
-            </div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full md:w-64 lg:w-80 px-4 py-3 mb-4 md:mb-0 mr-0 md:mr-4 bg-green-600 text-white border-b border-white focus:outline-none placeholder-white placeholder-opacity-75"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full md:w-64 lg:w-80 px-4 py-3 mb-4 md:mb-0 mr-0 md:mr-4 bg-green-600 text-white border-b border-white focus:outline-none placeholder-white placeholder-opacity-75"
+              placeholder="Your Email"
+              required
+            />
             <button
               type="submit"
-              className=" -mt-4 text-black bg-white px-10 lg:py-2 py-3 w-[10rem] rounded-full focus:outline-none font-custom hover:bg-black hover:text-white duration-500"
+              className="px-6 py-3 bg-white text-black rounded-full font-custom hover:bg-black hover:text-white transition duration-300 ease-in-out focus:outline-none"
             >
               Sign Up
             </button>
           </form>
         </div>
       </div>
-      <div className=" border-white h-full  md:mt-0 ">
+      <div className="container mx-auto mt-10">
         <FooterBottom />
       </div>
     </div>
