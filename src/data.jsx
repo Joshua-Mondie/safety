@@ -310,10 +310,10 @@ export const navLinks = [
         title: "Objectives & Functions",
         route: "/objectivesandfunctions",
       },
-      {
-        title: "Safety Ethnics and Compliance Commitee",
-        route: "/safetyethnicsandcompliancecommitee",
-      },
+      // {
+      //   title: "Safety Ethnics and Compliance Commitee",
+      //   route: "/safetyethnicsandcompliancecommitee",
+      // },
       {
         title: "Disciplinary Commitee",
         route: "/disciplinarycommitee",
